@@ -12,7 +12,6 @@
 #define D_COOKIE_READER_KEY @"cookie_reader_key"
 #define D_SQLLITE_MODEL_FILE_NAME @"CoreDataModel"
 #define D_SQLLITE_MODEL_FILE_SUFFIX @"momd"
-#define 
 
 /**教师（管理员）登入方法***/
 #define D_HTTP_METHOD_LOGINFORTEACHER @"/ios/loginForTeacher.jhtml"
