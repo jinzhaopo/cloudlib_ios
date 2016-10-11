@@ -8,21 +8,10 @@
 
 #import <UIKit/UIKit.h>
 @interface BaseController : UIViewController<UIWebViewDelegate>
-- (void)loadWebView:(NSString *)urlString;
 
+/**在调用presentViewController方法的时候执行的返回操作***/
+-(void) goBack4PresentViewController;
 
-/***
- 到某个页面通过某个xib
- */
--(void) go2ViewByXib:(UIViewController *)viewController and: (NSString *)viewName;
-/***
- 通过storyboard找到对应的view
- **/
--(void) go2ViewByStoryboard:(UIViewController *)viewController and: (NSString *)viewName;
-/***
- 回到上个页面
- */
--(void) backView;
 /***
  加载xib
  */
@@ -33,4 +22,7 @@
  *
  **/
 -(void) httpAction:(int) what and: (NSData *)  data and: (NSURLResponse * )  response and: (NSError *)  error;
+
+
+
 @end

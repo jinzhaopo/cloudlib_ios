@@ -10,43 +10,10 @@
 #import "BaseController.h"
 
 @implementation BaseController
-- (void)loadWebView:(NSString *)urlString{
-    UIWebView *webView=[[UIWebView alloc] initWithFrame:self.view.frame];
-    webView.delegate=self;
-    [self.view addSubview:webView];
-    //NSMutableURLRequest *request=[HttpHelper initRequestWithUrl:urlString];
-    //[webView loadRequest:request];
-    
-    //NSString *path = @"/ios_project/苹果页面备份/html/index.html";
-    NSString *htmlString = [NSString stringWithContentsOfFile:urlString encoding:NSUTF8StringEncoding error:nil];
-    
-    NSURL *url=[NSURL URLWithString:urlString];
-    [webView loadHTMLString:htmlString baseURL:url];
-}
 
-
-/***
- 到某个页面
- */
--(void) go2ViewByXib:(UIViewController *)viewController and: (NSString *)viewName{
-    //获取view
-    viewController.view = [self loadXIB:viewName and:viewController];
+/**在调用presentViewController方法的时候执行的返回操作***/
+-(void) goBack4PresentViewController{
     
-    //现在开启动画
-    [self presentViewController:viewController animated:true completion:nil];
-    
-}
-
-/***通过storyboard找到对应的view**/
--(void) go2ViewByStoryboard:(UIViewController *)viewController and: (NSString *)viewName{
-    
-}
-/***
- 回到上个页面
- */
--(void) backView{
-    
-    //返回到之前的视图控制器
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
