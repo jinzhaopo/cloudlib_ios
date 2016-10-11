@@ -11,6 +11,9 @@
 #import "IndexController.h"
 
 @interface LoginSwitchController ()
+
+@property(nonatomic,strong) AdminController *adminController;
+
 //---控件---
 /**用户按钮*/
 - (IBAction)userBt;
@@ -37,13 +40,15 @@
 //用户按钮事件
 
 - (IBAction)userBt {
-    [self go2ViewByXib:[[AdminController alloc] init] and: @"AdminController"];
-
-
+   
 }
 
 //管理员事件
 - (IBAction)adminBt {
-    [self go2ViewByXib:[[IndexController alloc] init] and: @"IndexController"];
+    //xib跳转
+    self.adminController=[[AdminController alloc]initWithNibName:@"AdminController" bundle:nil];
+    [self presentViewController:self.adminController animated:YES completion:^{
+        
+    }];
 }
 @end

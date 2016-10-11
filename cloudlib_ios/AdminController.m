@@ -133,8 +133,7 @@
         [NSTimer scheduledTimerWithTimeInterval:3 target:self selector:@selector(closeErrorMessage) userInfo:nil repeats:NO];
     }else{
         //如果正确就进行跳转
-        //[self go2ViewByXib:[[IndexController alloc] init] and: @"IndexController"];
-        [self loadWebView:@"/ios_project/苹果页面备份/html/index.html"];
+       
         
     }
 
@@ -143,7 +142,7 @@
 //----------组件----------
 
 - (IBAction)goBack {
-    [self backView];
+    [self goBack4PresentViewController];
 }
 
 - (IBAction)login {
