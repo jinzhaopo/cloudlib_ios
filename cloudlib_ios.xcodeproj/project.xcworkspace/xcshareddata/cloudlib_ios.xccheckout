@@ -12,7 +12,7 @@
 	<dict>
 		<key>3F0EE2461E61F313915C92136800B10FE5DCABC8</key>
 		<string>https://github.com/jinzhaopo/cloudlib_ios.git</string>
-		<key>B8D8B01C1FE27F2A728788075B5C4781B12A0A46</key>
+		<key>FCDE518E260296E13FACDF47E4787123439ED0E7</key>
 		<string>svn://192.168.1.9/usr/svn/repos/cloudlib_ios</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
@@ -21,12 +21,12 @@
 	<dict>
 		<key>3F0EE2461E61F313915C92136800B10FE5DCABC8</key>
 		<string>../..%2011.10.54</string>
-		<key>B8D8B01C1FE27F2A728788075B5C4781B12A0A46</key>
+		<key>FCDE518E260296E13FACDF47E4787123439ED0E7</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectRepositoryRootDictionary</key>
 	<dict>
-		<key>B8D8B01C1FE27F2A728788075B5C4781B12A0A46</key>
+		<key>FCDE518E260296E13FACDF47E4787123439ED0E7</key>
 		<string>svn://192.168.1.9</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -34,14 +34,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>B8D8B01C1FE27F2A728788075B5C4781B12A0A46</string>
+	<string>FCDE518E260296E13FACDF47E4787123439ED0E7</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.subversion</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>B8D8B01C1FE27F2A728788075B5C4781B12A0A46</string>
+			<string>FCDE518E260296E13FACDF47E4787123439ED0E7</string>
 			<key>IDESourceControlWCCName</key>
 			<string>cloudlib_ios</string>
 		</dict>
