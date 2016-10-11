@@ -12,7 +12,6 @@
 		1878231F1D9B9AB40025BC3E /* StringHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1878231E1D9B9AB40025BC3E /* StringHelper.m */; };
 		187823221D9B9AC90025BC3E /* BaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187823211D9B9AC90025BC3E /* BaseController.m */; };
 		18B38DDB1D9BA25200EF2885 /* LoginSwitchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B38DDA1D9BA25200EF2885 /* LoginSwitchController.m */; };
-		18C820EB1DAB271F009ADFD5 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 18C820EA1DAB271F009ADFD5 /* index.html */; };
 		18C820F21DAB88B9009ADFD5 /* CoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18C820F01DAB88B9009ADFD5 /* CoreDataModel.xcdatamodeld */; };
 		18C820F51DAB89B1009ADFD5 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C820F41DAB89B1009ADFD5 /* User.m */; };
 		18F553D01DA892A100E44F99 /* HttpData.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F553CF1DA892A100E44F99 /* HttpData.m */; };
@@ -29,6 +28,14 @@
 		18FFA5461D9B95FE00258011 /* FactoryHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FFA5441D9B95FE00258011 /* FactoryHelper.m */; };
 		18FFA54C1D9B968100258011 /* HttpHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FFA54B1D9B968100258011 /* HttpHelper.m */; };
 		18FFA5501D9B96D000258011 /* UserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FFA54F1D9B96D000258011 /* UserDelegate.m */; };
+		A140F0DF1DACC2CA00500834 /* bootstrap in Resources */ = {isa = PBXBuildFile; fileRef = A140F0D71DACC2CA00500834 /* bootstrap */; };
+		A140F0E01DACC2CA00500834 /* css in Resources */ = {isa = PBXBuildFile; fileRef = A140F0D81DACC2CA00500834 /* css */; };
+		A140F0E11DACC2CA00500834 /* images in Resources */ = {isa = PBXBuildFile; fileRef = A140F0D91DACC2CA00500834 /* images */; };
+		A140F0E21DACC2CA00500834 /* index_2.html in Resources */ = {isa = PBXBuildFile; fileRef = A140F0DA1DACC2CA00500834 /* index_2.html */; };
+		A140F0E31DACC2CA00500834 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = A140F0DB1DACC2CA00500834 /* index.html */; };
+		A140F0E41DACC2CA00500834 /* js in Resources */ = {isa = PBXBuildFile; fileRef = A140F0DC1DACC2CA00500834 /* js */; };
+		A140F0E51DACC2CA00500834 /* login_2.html in Resources */ = {isa = PBXBuildFile; fileRef = A140F0DD1DACC2CA00500834 /* login_2.html */; };
+		A140F0E61DACC2CA00500834 /* login.html in Resources */ = {isa = PBXBuildFile; fileRef = A140F0DE1DACC2CA00500834 /* login.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +58,6 @@
 		187823211D9B9AC90025BC3E /* BaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseController.m; sourceTree = "<group>"; };
 		18B38DD91D9BA25200EF2885 /* LoginSwitchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginSwitchController.h; sourceTree = "<group>"; };
 		18B38DDA1D9BA25200EF2885 /* LoginSwitchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginSwitchController.m; sourceTree = "<group>"; };
-		18C820EA1DAB271F009ADFD5 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = index.html; path = "../../苹果页面备份/html/index.html"; sourceTree = "<group>"; };
 		18C820EF1DAB644B009ADFD5 /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
 		18C820F11DAB88B9009ADFD5 /* CoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataModel.xcdatamodel; sourceTree = "<group>"; };
 		18C820F31DAB89B1009ADFD5 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
@@ -83,6 +89,14 @@
 		18FFA54B1D9B968100258011 /* HttpHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpHelper.m; sourceTree = "<group>"; };
 		18FFA54E1D9B96D000258011 /* UserDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDelegate.h; sourceTree = "<group>"; };
 		18FFA54F1D9B96D000258011 /* UserDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDelegate.m; sourceTree = "<group>"; };
+		A140F0D71DACC2CA00500834 /* bootstrap */ = {isa = PBXFileReference; lastKnownFileType = folder; path = bootstrap; sourceTree = "<group>"; };
+		A140F0D81DACC2CA00500834 /* css */ = {isa = PBXFileReference; lastKnownFileType = folder; path = css; sourceTree = "<group>"; };
+		A140F0D91DACC2CA00500834 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		A140F0DA1DACC2CA00500834 /* index_2.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index_2.html; sourceTree = "<group>"; };
+		A140F0DB1DACC2CA00500834 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		A140F0DC1DACC2CA00500834 /* js */ = {isa = PBXFileReference; lastKnownFileType = folder; path = js; sourceTree = "<group>"; };
+		A140F0DD1DACC2CA00500834 /* login_2.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = login_2.html; sourceTree = "<group>"; };
+		A140F0DE1DACC2CA00500834 /* login.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = login.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,7 +161,14 @@
 		18C820E31DAB25EC009ADFD5 /* html */ = {
 			isa = PBXGroup;
 			children = (
-				18C820EA1DAB271F009ADFD5 /* index.html */,
+				A140F0D71DACC2CA00500834 /* bootstrap */,
+				A140F0D81DACC2CA00500834 /* css */,
+				A140F0D91DACC2CA00500834 /* images */,
+				A140F0DA1DACC2CA00500834 /* index_2.html */,
+				A140F0DB1DACC2CA00500834 /* index.html */,
+				A140F0DC1DACC2CA00500834 /* js */,
+				A140F0DD1DACC2CA00500834 /* login_2.html */,
+				A140F0DE1DACC2CA00500834 /* login.html */,
 			);
 			name = html;
 			sourceTree = "<group>";
@@ -377,9 +398,16 @@
 				18F802391DA9EEB100ABE3F5 /* IndexController.xib in Resources */,
 				18FFA51F1D9B93FF00258011 /* Main.storyboard in Resources */,
 				1856BAFC1D9CEA99004D8851 /* AdminController.xib in Resources */,
-				18C820EB1DAB271F009ADFD5 /* index.html in Resources */,
+				A140F0E01DACC2CA00500834 /* css in Resources */,
+				A140F0E11DACC2CA00500834 /* images in Resources */,
+				A140F0E61DACC2CA00500834 /* login.html in Resources */,
+				A140F0E51DACC2CA00500834 /* login_2.html in Resources */,
+				A140F0E31DACC2CA00500834 /* index.html in Resources */,
+				A140F0E41DACC2CA00500834 /* js in Resources */,
+				A140F0E21DACC2CA00500834 /* index_2.html in Resources */,
 				18FFA5241D9B93FF00258011 /* LaunchScreen.xib in Resources */,
 				18FFA5211D9B93FF00258011 /* Images.xcassets in Resources */,
+				A140F0DF1DACC2CA00500834 /* bootstrap in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
