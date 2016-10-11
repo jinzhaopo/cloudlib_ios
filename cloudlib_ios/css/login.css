@@ -1,0 +1,315 @@
+body{
+	background:#f6f6f6;
+	padding-bottom:65px;
+}
+/*header*/
+header{
+	position:fixed;
+	background-image:url(../../login/images/top_bg.png);	
+	color:#FFF;
+	height:50px;
+	line-height:50px;
+	text-align:center;
+	width:100%;
+	font-size:16px;
+	z-index:100;
+}
+header a:link{
+	display:block;
+	width:50px;
+	height:50px;
+	line-height:50px;
+	text-align:center;
+	color:#FFF;
+	font-size:14px;
+	position:absolute;
+	top:0px;
+	left:0px;
+	text-decoration:none;
+}
+header a:hover,header a:visited{
+	color:#FFF;
+}
+header a:active{
+	opacity:0.5;
+}
+
+header a.oth:link{
+	display:block;
+	width:80px;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	background:#006091;
+	border-radius:3px;
+	color:#6bc0ea;
+	font-size:12px;
+	position:absolute;
+	top:10px;
+	left:10px;
+	text-decoration:none;
+}
+
+/*navbar*/
+.navbar ul{
+	width:100%;
+	margin:0px;
+}
+.navbar li{
+	width:50%;
+	text-align:center;
+	float:left;
+}
+.navbar li a{
+	padding-left:0px;
+	padding-right:0px;
+}
+.navbar-default .navbar-nav li a{
+	color:#000;
+}
+.navbar-default .navbar-nav li a:hover,
+.navbar-default .navbar-nav li.active a,
+.navbar-default .navbar-nav li.active a:hover{
+	background:none;
+	color:#0090ff;
+}
+/*login*/
+.login{
+	padding-top:50px;
+}
+.login h1{
+	text-align:center;
+}
+.login form{
+	margin:70px auto 0px auto;
+	width:95%;
+}
+.login form div{
+	margin-top:20px;
+}
+.login form div.input-group{
+	background:#FFF;
+	border:1px solid #EEE;
+}
+.login form div .input-group-addon{
+	border:0px;
+	background:none;
+	height:30px;
+	line-height:30px;
+	padding:0px 10px;
+	font-size:14px;
+	color:#999;
+}
+.login form div .form-control{
+	border:0px;
+	background:none;
+	box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+	height:30px;
+	line-height:30px;
+	padding:0px;
+	font-size:12px;
+}
+.login form div .btn{
+	background:#00a2ff;
+	color:#FFF;
+	border-radius:0px;
+}
+
+.login form .form-control-static a{
+	color:#00a2ff;
+}
+.login form .form-control-static a:hover{
+	text-decoration:none;
+}
+.login form .form-control-static a:nth-child(1){
+	float:right;
+}
+
+
+
+/*class img list*/
+.class-img-list{
+	padding-top:30px;
+}
+
+.class-img-list_2{
+	padding-top:20px;
+}
+.class-img-list_4{
+padding-top:50px;
+}
+.class-img-list img{
+	width:100%;
+	margin-top:20px;
+}
+
+/*class list*/
+.class-list{
+	padding:0px 5px;
+	padding-top:50px;
+}
+.class-list dt{
+	line-height:40px;
+	clear:both;
+}
+.class-list dt span{
+	float:left;
+	display:block;
+	width:6px;
+	height:6px;
+	border-radius:3px;
+	background:#000;
+	margin:16px 5px 0px 5px;
+}
+.class-list dd{
+	text-align:center;
+	line-height:30px;
+	margin-bottom:10px;
+	padding:0px 5px
+}
+.class-list dd a{
+	display:block;
+	background:#FFF;
+	color:#000;
+}
+.class-list dd a:hover{
+	text-decoration:none;
+}
+.class-list img{
+	width:90%;
+	margin:0px auto;
+}
+.set{
+float:left;
+width:20%;
+
+
+}
+.log{
+float:left;
+font-size:16px;
+color:#ffffff;
+width:12%
+
+}
+.serach{
+float:left;
+margin-left:auto;
+margin-right:auto;
+
+width:36%
+
+}
+.tubiao{
+float:left;
+
+width:10%
+}
+.saoyisao{
+float:left;
+
+width:22%
+font-size:16px;
+color:#ffffff;
+}
+.set_2{
+float:left;
+width:20%;
+padding-top:60px;
+}
+.serach_2{
+float:left;
+margin-left:auto;
+margin-right:auto;
+}
+.tubiao_2{
+float:right;
+width:20%
+}
+.li_1{
+padding-top:16px;
+}
+.bottom{
+height:100px;
+width:100%;
+margin:0 auto;
+}
+.rowe{
+width:100%;
+height:400px;
+margin:0 auto;
+
+}
+.col{
+float:left;
+width:33%;
+padding-left:1%;
+}
+.tab{
+width:100%;
+height:50px;
+border-top:2px solid #b8e0e8;
+background-color:#f0eff4;
+border-bottom: 12px solid #62bacb;
+margin:0px;
+padding:0px;
+float:left;
+
+}
+.gongga{
+ color:#FF0000;
+ font-size:16px;
+ text-align:center;
+ vertical-align:middle;
+}
+.gonggao{
+ border-left:2px solid #b8e0e8;
+}
+.opa{
+width:100%;
+margin:0 auto;
+padding-top:180px;
+}
+.se_left{
+float:left;
+width:25%;
+background-color:#118ed3;
+font-size:16px;
+color:#fff;
+text-align:center;
+line-height:40px;
+}
+.se_middle{
+float:left;
+width:50%;
+background-color:#51bdf9;
+font-size:16px;
+color:#fff;
+text-align:center;
+line-height:40px;
+}
+.se_right{
+float:left;
+width:25%;
+background-color:#3890c1;
+font-size:16px;
+color:#fff;
+text-align:center;
+line-height:40px;
+}
+.cli{
+width:100%;
+height:100px;
+}
+.navbar{
+background:#d2e5e9;
+}
+.list{
+	background-image:url(../../login/images/bottom_bg.png);
+	background-color:#000000;
+	list-style:none;
+}
+.container {
+
+width:100%;
+}
