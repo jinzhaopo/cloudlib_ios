@@ -13,5 +13,5 @@
 #define D_SQLLITE_MODEL_FILE_NAME @"CoreDataModel"
 #define D_SQLLITE_MODEL_FILE_SUFFIX @"momd"
 
-/**教师（管理员）登入方给哥哥哥哥法***/
+/**教师（管理员）登入方给哥哥哥哥法的房间打开了付款了对方立刻觉得浪费了大家看***/
 #define D_HTTP_METHOD_LOGINFORTEACHER @"/ios/loginForTeacher.jhtml"

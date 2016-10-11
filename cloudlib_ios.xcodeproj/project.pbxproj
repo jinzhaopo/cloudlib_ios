@@ -28,6 +28,14 @@
 		18FFA5461D9B95FE00258011 /* FactoryHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FFA5441D9B95FE00258011 /* FactoryHelper.m */; };
 		18FFA54C1D9B968100258011 /* HttpHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FFA54B1D9B968100258011 /* HttpHelper.m */; };
 		18FFA5501D9B96D000258011 /* UserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FFA54F1D9B96D000258011 /* UserDelegate.m */; };
+		A140F0DF1DACC2CA00500834 /* bootstrap in Resources */ = {isa = PBXBuildFile; fileRef = A140F0D71DACC2CA00500834 /* bootstrap */; };
+		A140F0E01DACC2CA00500834 /* css in Resources */ = {isa = PBXBuildFile; fileRef = A140F0D81DACC2CA00500834 /* css */; };
+		A140F0E11DACC2CA00500834 /* images in Resources */ = {isa = PBXBuildFile; fileRef = A140F0D91DACC2CA00500834 /* images */; };
+		A140F0E21DACC2CA00500834 /* index_2.html in Resources */ = {isa = PBXBuildFile; fileRef = A140F0DA1DACC2CA00500834 /* index_2.html */; };
+		A140F0E31DACC2CA00500834 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = A140F0DB1DACC2CA00500834 /* index.html */; };
+		A140F0E41DACC2CA00500834 /* js in Resources */ = {isa = PBXBuildFile; fileRef = A140F0DC1DACC2CA00500834 /* js */; };
+		A140F0E51DACC2CA00500834 /* login_2.html in Resources */ = {isa = PBXBuildFile; fileRef = A140F0DD1DACC2CA00500834 /* login_2.html */; };
+		A140F0E61DACC2CA00500834 /* login.html in Resources */ = {isa = PBXBuildFile; fileRef = A140F0DE1DACC2CA00500834 /* login.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +89,14 @@
 		18FFA54B1D9B968100258011 /* HttpHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpHelper.m; sourceTree = "<group>"; };
 		18FFA54E1D9B96D000258011 /* UserDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDelegate.h; sourceTree = "<group>"; };
 		18FFA54F1D9B96D000258011 /* UserDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDelegate.m; sourceTree = "<group>"; };
+		A140F0D71DACC2CA00500834 /* bootstrap */ = {isa = PBXFileReference; lastKnownFileType = folder; path = bootstrap; sourceTree = "<group>"; };
+		A140F0D81DACC2CA00500834 /* css */ = {isa = PBXFileReference; lastKnownFileType = folder; path = css; sourceTree = "<group>"; };
+		A140F0D91DACC2CA00500834 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		A140F0DA1DACC2CA00500834 /* index_2.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index_2.html; sourceTree = "<group>"; };
+		A140F0DB1DACC2CA00500834 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		A140F0DC1DACC2CA00500834 /* js */ = {isa = PBXFileReference; lastKnownFileType = folder; path = js; sourceTree = "<group>"; };
+		A140F0DD1DACC2CA00500834 /* login_2.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = login_2.html; sourceTree = "<group>"; };
+		A140F0DE1DACC2CA00500834 /* login.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = login.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -376,6 +392,7 @@
 				1856BAFC1D9CEA99004D8851 /* AdminController.xib in Resources */,
 				18FFA5241D9B93FF00258011 /* LaunchScreen.xib in Resources */,
 				18FFA5211D9B93FF00258011 /* Images.xcassets in Resources */,
+				A140F0DF1DACC2CA00500834 /* bootstrap in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

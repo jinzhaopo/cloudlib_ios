@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "FCDE518E260296E13FACDF47E4787123439ED0E7",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "FCDE518E260296E13FACDF47E4787123439ED0E7" : 0,
+    "3F0EE2461E61F313915C92136800B10FE5DCABC8" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "886488F9-82BD-4F62-8689-7D86E660760D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "FCDE518E260296E13FACDF47E4787123439ED0E7" : "cloudlib_ios",
+    "3F0EE2461E61F313915C92136800B10FE5DCABC8" : "cloudlib_ios%2011.10.54"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "cloudlib_ios",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "cloudlib_ios.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jinzhaopo\/cloudlib_ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3F0EE2461E61F313915C92136800B10FE5DCABC8"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/192.168.1.9",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FCDE518E260296E13FACDF47E4787123439ED0E7"
+    }
+  ]
+}
