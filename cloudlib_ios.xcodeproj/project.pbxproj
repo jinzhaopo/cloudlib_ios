@@ -111,7 +111,6 @@
 		18FFA5461D9B95FE00258011 /* FactoryHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FFA5441D9B95FE00258011 /* FactoryHelper.m */; };
 		18FFA54C1D9B968100258011 /* HttpHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FFA54B1D9B968100258011 /* HttpHelper.m */; };
 		18FFA5501D9B96D000258011 /* UserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FFA54F1D9B96D000258011 /* UserDelegate.m */; };
-		A140F0DF1DACC2CA00500834 /* bootstrap in Resources */ = {isa = PBXBuildFile; fileRef = A140F0D71DACC2CA00500834 /* bootstrap */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -249,7 +248,6 @@
 		18FFA54B1D9B968100258011 /* HttpHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpHelper.m; sourceTree = "<group>"; };
 		18FFA54E1D9B96D000258011 /* UserDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDelegate.h; sourceTree = "<group>"; };
 		18FFA54F1D9B96D000258011 /* UserDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDelegate.m; sourceTree = "<group>"; };
-		A140F0D71DACC2CA00500834 /* bootstrap */ = {isa = PBXFileReference; lastKnownFileType = folder; path = bootstrap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -785,7 +783,6 @@
 				18EC2ED51DACC87300512792 /* back.psd in Resources */,
 				18EC2EB51DACC87300512792 /* bodyBg3.jpg in Resources */,
 				18EC2E5F1DACC86900512792 /* bootstrap.min_2.css in Resources */,
-				A140F0DF1DACC2CA00500834 /* bootstrap in Resources */,
 				18EC2EBF1DACC87300512792 /* img_main_1.jpg in Resources */,
 				18EC2EB01DACC87300512792 /* 46.jpg in Resources */,
 				18EC2EB21DACC87300512792 /* 46_3.jpg in Resources */,

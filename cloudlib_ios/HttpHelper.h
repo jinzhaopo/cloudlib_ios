@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "HttpData.h"
+#import "SynchronousHttpData.h"
+
 @interface HttpHelper : NSObject
 +(NSMutableURLRequest *) initRequestWithUrl:(NSString *)urlString;
 
@@ -39,6 +41,14 @@
  
  *POST请求需要修改请求方法为POST，并把参数转换为二进制数据设置为请求体*/
 +(void) post:(HttpData*) httpData ;
+
+
+/***同步get请求**/
++(SynchronousHttpData*) getBySynchronousHttpData:(SynchronousHttpData*) synchronousHttpData ;
+
+
+/***同步post请求**/
++(SynchronousHttpData*) postBySynchronousHttpData:(SynchronousHttpData*) synchronousHttpData ;
 
 
 @end

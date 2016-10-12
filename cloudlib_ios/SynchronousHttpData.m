@@ -8,6 +8,9 @@
 
 #import "SynchronousHttpData.h"
 
+@interface SynchronousHttpData()
+
+@end
 @implementation SynchronousHttpData
 
 @end
