@@ -54,6 +54,11 @@
                      columnValue:columnValue valueType:valueType];
 }
 
+//清除所有用户
+- (void) clearUsers{
+    [self clearModels];
+}
+
 //判断用户是否已经登录
 - (bool) isLoginJudge:(NSNumber *) loginJudge{
     return [loginJudge isEqual:@1];

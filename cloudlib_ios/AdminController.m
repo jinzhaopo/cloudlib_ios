@@ -12,8 +12,9 @@
 #import "HttpData.h"
 #import "ComonDefine.h"
 #import "IndexController.h"
-
-
+#import "UserDelegate.h"
+#import "FactoryHelper.h"
+#import "LoginInfo.h"
 
 @interface AdminController ()
 
@@ -132,8 +133,15 @@
         //1.3几秒后关闭
         [NSTimer scheduledTimerWithTimeInterval:3 target:self selector:@selector(closeErrorMessage) userInfo:nil repeats:NO];
     }else{
+        
         //如果正确就进行跳转
-       
+        //[self go2ViewByXib:[[IndexController alloc] init] and: @"IndexController"];
+        UserDelegate *userDelegate=[FactoryHelper initFactoryHelperAndgetDBInstance];
+        [userDelegate clearUsers];
+        
+        //[userDelegate saveUser:<#(NSNumber *)#> userName:<#(NSString *)#> barcode:<#(NSString *)#> password:<#(NSString *)#> schoolId:<#(NSNumber *)#> type:<#(NSNumber *)#> loginJudge:<#(NSNumber *)#> message:<#(NSString *)#> teacherId:<#(NSNumber *)#>];
+        
+        //[self loadWebView:@"/ios_project/苹果页面备份/html/index.html"];
         
     }
 
@@ -142,7 +150,7 @@
 //----------组件----------
 
 - (IBAction)goBack {
-    [self goBack4PresentViewController];
+    [self backView];
 }
 
 - (IBAction)login {
@@ -186,18 +194,20 @@
  **/
 -(void) httpAction:(int) what and: (NSData *)  data and: (NSURLResponse * )  response and: (NSError *)  error{
     
-    NSString *dataString=[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-    NSLog(@"%@",dataString);
-    
-    switch (what) {
-        case 1:
-            [self loginAction: dataString];
-            break;
-            
-        default:
-            break;
+    if(!error){
+        NSString *dataString=[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+        //NSLog(@"%@",error);
+        switch (what) {
+            case 1:
+                [self loginAction: dataString];
+                break;
+                
+            default:
+                break;
+        }
+    }else{
+        
     }
-    
 }
 
 
