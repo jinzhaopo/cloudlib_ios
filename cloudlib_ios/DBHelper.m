@@ -22,6 +22,11 @@
     [self commitData];
 }
 
+- (void) clearModels{
+    [self.managedObjectContxt deletedObjects];
+    [self commitData];
+}
+
 - (id) updateModel:(NSString *)modelName columnName:(NSString *)columnName columnValue:(id) columnValue valueType:(NSString *)format{
     id entity=[self findOne:modelName columnName:columnName columnValue:columnValue valueType:format];
     return entity;
