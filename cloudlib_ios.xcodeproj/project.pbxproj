@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		181C476B1DADD1F90029F38B /* SynchronousHttpData.m in Sources */ = {isa = PBXBuildFile; fileRef = 181C476A1DADD1F90029F38B /* SynchronousHttpData.m */; };
 		1856BAFB1D9CEA99004D8851 /* AdminController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1856BAF91D9CEA99004D8851 /* AdminController.m */; };
 		1856BAFC1D9CEA99004D8851 /* AdminController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1856BAFA1D9CEA99004D8851 /* AdminController.xib */; };
 		1878231F1D9B9AB40025BC3E /* StringHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1878231E1D9B9AB40025BC3E /* StringHelper.m */; };
@@ -124,6 +125,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		181C47691DADD1F90029F38B /* SynchronousHttpData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynchronousHttpData.h; sourceTree = "<group>"; };
+		181C476A1DADD1F90029F38B /* SynchronousHttpData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SynchronousHttpData.m; sourceTree = "<group>"; };
 		1856BAF81D9CEA99004D8851 /* AdminController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdminController.h; sourceTree = "<group>"; };
 		1856BAF91D9CEA99004D8851 /* AdminController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdminController.m; sourceTree = "<group>"; };
 		1856BAFA1D9CEA99004D8851 /* AdminController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdminController.xib; sourceTree = "<group>"; };
@@ -568,6 +571,8 @@
 				18FFA54B1D9B968100258011 /* HttpHelper.m */,
 				18F553CE1DA892A100E44F99 /* HttpData.h */,
 				18F553CF1DA892A100E44F99 /* HttpData.m */,
+				181C47691DADD1F90029F38B /* SynchronousHttpData.h */,
+				181C476A1DADD1F90029F38B /* SynchronousHttpData.m */,
 			);
 			name = net;
 			sourceTree = "<group>";
@@ -809,6 +814,7 @@
 				18B38DDB1D9BA25200EF2885 /* LoginSwitchController.m in Sources */,
 				18C820F51DAB89B1009ADFD5 /* User.m in Sources */,
 				18FFA5461D9B95FE00258011 /* FactoryHelper.m in Sources */,
+				181C476B1DADD1F90029F38B /* SynchronousHttpData.m in Sources */,
 				18FFA5161D9B93FF00258011 /* main.m in Sources */,
 				18EC2E5A1DACC86900512792 /* bootstrap-theme.css.map in Sources */,
 				18F553D31DA8E3C700E44F99 /* EncryptionUtil.m in Sources */,

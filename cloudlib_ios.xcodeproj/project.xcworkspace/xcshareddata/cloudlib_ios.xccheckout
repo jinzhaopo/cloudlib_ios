@@ -13,7 +13,7 @@
 		<key>3F0EE2461E61F313915C92136800B10FE5DCABC8</key>
 		<string>https://github.com/jinzhaopo/cloudlib_ios.git</string>
 		<key>FCDE518E260296E13FACDF47E4787123439ED0E7</key>
-		<string>svn://192.168.1.9/usr/svn/repos/cloudlib_ios</string>
+		<string>svn://192.168.1.9</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>cloudlib_ios.xcodeproj</string>
@@ -24,13 +24,6 @@
 		<key>FCDE518E260296E13FACDF47E4787123439ED0E7</key>
 		<string>../..</string>
 	</dict>
-	<key>IDESourceControlProjectRepositoryRootDictionary</key>
-	<dict>
-		<key>FCDE518E260296E13FACDF47E4787123439ED0E7</key>
-		<string>svn://192.168.1.9</string>
-	</dict>
-	<key>IDESourceControlProjectURL</key>
-	<string>svn://192.168.1.9/usr/svn/repos/cloudlib_ios/cloudlib_ios.xcodeproj</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
