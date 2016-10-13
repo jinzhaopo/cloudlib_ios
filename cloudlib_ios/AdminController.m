@@ -169,10 +169,10 @@
         [userDelegate saveUser:userBean.userId userName:userBean.userName barcode:userBean.barcode password:userBean.password schoolId:userBean.schoolId type:userBean.type loginJudge:userBean.loginJudge message:userBean.message teacherId:userBean.teacherId];
         [LoginInfoBean getLoginInfo:dict];
         //xib跳转
-        //self.indexController=[[IndexController alloc]initWithNibName:@"IndexController" bundle:nil];
-        //[self presentViewController:self.indexController animated:YES completion:^{
+        self.indexController=[[IndexController alloc]initWithNibName:@"IndexController" bundle:nil];
+        [self presentViewController:self.indexController animated:YES completion:^{
             
-        //}];
+        }];
         
         
     }
