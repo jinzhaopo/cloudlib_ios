@@ -8,12 +8,12 @@
 
 #import "LoginInfoBean.h"
 @implementation LoginInfoBean
-static NSMutableDictionary *_dic;
+static NSDictionary *_dic;
 //获取登录后的信息
 +(NSDictionary *) getLoginInfo{
     
     if(_dic==nil){
-        _dic=[[NSMutableDictionary alloc] init];
+        _dic=[[NSDictionary alloc] init];
     }
     return _dic;
 }
