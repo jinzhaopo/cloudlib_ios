@@ -11,6 +11,8 @@
 
 @interface IndexController ()
 
+/*****/
+@property (weak, nonatomic) IBOutlet UIWebView *webView;
 
 @end
 
@@ -18,6 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self loadLocationHtmlFile:self.webView and:@"/index.html"];
 
 }
 

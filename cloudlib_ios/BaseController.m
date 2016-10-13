@@ -45,7 +45,7 @@
  **/
 -(void) httpAction:(int) what and: (NSData *)  data and: (NSURLResponse * )  response and: (NSError *)  error{
     
-   
+    
 }
 
 /****判断网络是否链接****/
@@ -78,21 +78,13 @@
 
 /**加载本地html***/
 -(void) loadLocationHtmlFile:(UIWebView*) webView and:(NSString*) filePath;{
-    //第一种方法：mobile是根目录，name是文件名称，html是文件类型
     
-    //NSString* path = [[NSBundle mainBundle] pathForResource:filePath ofType:@"html" inDirectory:nil];
-    
-    //[webView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:path]]]; //加载本地文件
-    
-    //第二种方法：直接填写图片名,   css文件名
-    
-    NSString *path = [[NSBundle mainBundle] pathForResource:filePath ofType:@"html"];
-    
-    NSString *htmlString = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
-    
-    NSURL *baseURL = [NSURL fileURLWithPath:htmlString];
-    
-    [webView loadHTMLString:htmlString baseURL:baseURL];
+    NSString *bundleFile = [[NSBundle mainBundle] pathForResource:@"html" ofType:nil];
+    NSString *htmlFile = [bundleFile stringByAppendingPathComponent:filePath];
+    NSData *htmlData = [NSData dataWithContentsOfFile:htmlFile];
+    [webView loadData:htmlData MIMEType:@"text/html" textEncodingName:@"UTF-8" baseURL:[NSURL fileURLWithPath:bundleFile]];
+    //NSString *aaa = [_webView stringByEvaluatingJavaScriptFromString:@"document.body.innerHTML"];
+    //NSLog(@"aaa:%@",aaa);
     
 }
 
