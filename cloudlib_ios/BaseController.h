@@ -38,6 +38,6 @@
 /*****前进*/
 -(void) forwardDidPush: (UIWebView*) webView;
 
-
-
+/**加载本地html***/
+-(void) loadLocationHtmlFile:(UIWebView*) webView and:(NSString*) filePath;
 @end
