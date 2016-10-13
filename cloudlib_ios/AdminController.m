@@ -14,7 +14,7 @@
 #import "IndexController.h"
 #import "UserDelegate.h"
 #import "FactoryHelper.h"
-#import "LoginInfo.h"
+#import "SynchronousHttpData.h"
 
 @interface AdminController ()
 
@@ -117,12 +117,33 @@
 }
 /**关闭错误提示**/
 -(void) closeErrorMessage{
-    //  动画
     self.messageLabelView.hidden = true;
 }
-/**登入的动作**/
--(void) loginAction:(NSString*) dataString{
+
+//----------组件----------
+
+- (IBAction)goBack {
+    [self goBack4PresentViewController];
+}
+
+- (IBAction)login {
+    //TODO 登入
+    SynchronousHttpData *synchronousHttpData = [[SynchronousHttpData alloc] init];
+    NSString *param = [[[@"userName=" stringByAppendingString:self.nameValue] stringByAppendingString:@"&password="] stringByAppendingString:self.passwordValue];
+    NSString *url = [D_HTTP_URL stringByAppendingString:D_HTTP_METHOD_LOGINFORTEACHER];
     
+    synchronousHttpData.url = url;
+    synchronousHttpData.param = param;
+    
+    
+    
+    [HttpHelper getBySynchronousHttpData:synchronousHttpData];
+    
+    //等待登入的提示
+    [self openLoginMessage];
+    
+    NSString *dataString = [[ NSString alloc] initWithData:synchronousHttpData.data encoding:NSUTF8StringEncoding];
+    NSLog(dataString);
     //判断返回的东西
     if ([StringHelper isBlankString:dataString] ) {
         //如果是nil  说明用户名密码错误
@@ -135,41 +156,12 @@
     }else{
         
         //如果正确就进行跳转
-        //[self go2ViewByXib:[[IndexController alloc] init] and: @"IndexController"];
-        UserDelegate *userDelegate=[FactoryHelper initFactoryHelperAndgetDBInstance];
-        [userDelegate clearUsers];
         
-        //[userDelegate saveUser:<#(NSNumber *)#> userName:<#(NSString *)#> barcode:<#(NSString *)#> password:<#(NSString *)#> schoolId:<#(NSNumber *)#> type:<#(NSNumber *)#> loginJudge:<#(NSNumber *)#> message:<#(NSString *)#> teacherId:<#(NSNumber *)#>];
         
-        //[self loadWebView:@"/ios_project/苹果页面备份/html/index.html"];
         
     }
-
-}
-
-//----------组件----------
-
-- (IBAction)goBack {
-    [self backView];
-}
-
-- (IBAction)login {
-    //TODO 登入
-    HttpData *httpData = [[HttpData alloc] init];
-    NSString *param = [[[@"userName=" stringByAppendingString:self.nameValue] stringByAppendingString:@"&password="] stringByAppendingString:self.passwordValue];
-    NSString *url = [D_HTTP_URL stringByAppendingString:D_HTTP_METHOD_LOGINFORTEACHER];
     
-    httpData.url = url;
-    httpData.param = param;
-    httpData.what = 1;
-    httpData.baseController = self;
     
-    [HttpHelper get:httpData];
-    
-    //执行登入的动作
-    //开启等待的提示
-    [self openLoginMessage];
-    //[NSThread sleepForTimeInterval:1.0f];
     
     
     
@@ -194,20 +186,17 @@
  **/
 -(void) httpAction:(int) what and: (NSData *)  data and: (NSURLResponse * )  response and: (NSError *)  error{
     
-    if(!error){
-        NSString *dataString=[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-        //NSLog(@"%@",error);
-        switch (what) {
-            case 1:
-                [self loginAction: dataString];
-                break;
-                
-            default:
-                break;
-        }
-    }else{
-        
+    //先要判断网络是否链接
+    [self netISOpen:error];
+    NSString *dataString=[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    switch (what) {
+        case 1:
+            break;
+            
+        default:
+            break;
     }
+    
 }
 
 

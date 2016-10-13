@@ -135,7 +135,6 @@
 		187823211D9B9AC90025BC3E /* BaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseController.m; sourceTree = "<group>"; };
 		18B38DD91D9BA25200EF2885 /* LoginSwitchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginSwitchController.h; sourceTree = "<group>"; };
 		18B38DDA1D9BA25200EF2885 /* LoginSwitchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginSwitchController.m; sourceTree = "<group>"; };
-		18C820EF1DAB644B009ADFD5 /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
 		18C820F11DAB88B9009ADFD5 /* CoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataModel.xcdatamodel; sourceTree = "<group>"; };
 		18C820F31DAB89B1009ADFD5 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		18C820F41DAB89B1009ADFD5 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
@@ -557,7 +556,6 @@
 			isa = PBXGroup;
 			children = (
 				18FFA5481D9B964100258011 /* ComonDefine.h */,
-				18C820EF1DAB644B009ADFD5 /* Constant.h */,
 			);
 			name = const;
 			sourceTree = "<group>";
