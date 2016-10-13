@@ -16,10 +16,12 @@
 #import "FactoryHelper.h"
 #import "LoginInfoBean.h"
 #import "JsonUtil.h"
+#import "SynchronousHttpData.h"
+#import "IndexController.h"
 
 @interface AdminController ()
+@property (nonatomic,strong) IndexController* indexController;
 
-/***账户的值**/
 @property (nonatomic , strong) NSString* nameValue;
 
 /**密码的值***/
@@ -145,8 +147,8 @@
     
     NSString *dataString = [[ NSString alloc] initWithData:synchronousHttpData.data encoding:NSUTF8StringEncoding];
     NSLog(@"%@",dataString);
-    //判断返回的东西
-    if ([StringHelper isBlankString:dataString] ) {
+    if([StringHelper isBlankString:dataString]){
+        //判断返回的东西
         //如果是nil  说明用户名密码错误
         //1.1 先关闭提示
         [self closeLoginMessage];
@@ -155,27 +157,24 @@
         //1.3几秒后关闭
         [NSTimer scheduledTimerWithTimeInterval:3 target:self selector:@selector(closeErrorMessage) userInfo:nil repeats:NO];
     }else{
-       // UserBean *userBean=[JsonUtil paresJsonToUser:dataString];
-            //[loginBean setLoginInfoProperties:userBean.userId barcode:userBean.barcode userName:userBean.userName password:userBean.password schoolId:userBean.schoolId type:userBean.type loginJudge:userBean.loginJudge schoolName:nil];
-        //如果正确就进行跳转
-        //[self go2ViewByXib:[[IndexController alloc] init] and: @"IndexController"];
-        //UserDelegate *userDelegate=[FactoryHelper initFactoryHelperAndgetDBInstance];
-        //[userDelegate clearUsers:@"User"];
-        //[self loadWebView:@"/ios_project/苹果页面备份/html/index.html"];
+        // UserBean *userBean=[JsonUtil paresJsonToUser:dataString];
+        
+        //xib跳转
+        self.indexController=[[IndexController alloc]initWithNibName:@"IndexController" bundle:nil];
+        [self presentViewController:self.indexController animated:YES completion:^{
+            
+        }];
+        
         
     }
-
+    
+    
+    
+    
 }
 
-//----------组件----------
 
-    
-    
-    
-    
-    
-    
-    
+
 
 
 - (IBAction)nameChange {
@@ -194,20 +193,16 @@
  **/
 -(void) httpAction:(int) what and: (NSData *)  data and: (NSURLResponse * )  response and: (NSError *)  error{
     
-    if(!error){
-        NSString *dataString=[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-        //NSLog(@"%@",error);
-        NSLog(@"哈哈哈哈哈：%@",dataString);
-        switch (what) {
-            case 1:
-                //[self loginAction: dataString];
-                break;
-                
-            default:
-                break;
-        }
-    }else{
-        
+    //先要判断网络是否链接
+    [self netISOpen:error];
+    NSString *dataString=[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    switch (what) {
+        case 1:
+            
+            break;
+            
+        default:
+            break;
     }
     
 }
