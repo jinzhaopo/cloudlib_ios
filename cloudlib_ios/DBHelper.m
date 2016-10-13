@@ -23,15 +23,16 @@
 }
 
 - (void) clearModels:(NSString *)modelName{
-    [self.managedObjectContxt deletedObjects];
-    //NSArray *array=[self query:modelName coreDataSQL:@"1=1"];
-    //if([array count]){
-      //  for(id entity in array){
-        //    [self.managedObjectContxt deleteObject:entity];
-        //}
+    //[self.managedObjectContxt deletedObjects];
+    NSArray *array=[self query:modelName coreDataSQL:@"1=1"];
+    if([array count]){
+        for(id entity in array){
+            [self.managedObjectContxt deleteObject:entity];
+            [self commitData];
+        }
         //[self commitData];
-    //}
-    [self commitData];
+    }
+    //[self commitData];
 }
 
 - (id) updateModel:(NSString *)modelName columnName:(NSString *)columnName columnValue:(id) columnValue valueType:(NSString *)format{
