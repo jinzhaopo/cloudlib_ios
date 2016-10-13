@@ -15,8 +15,10 @@
 #import "UserDelegate.h"
 #import "FactoryHelper.h"
 #import "SynchronousHttpData.h"
+#import "IndexController.h"
 
 @interface AdminController ()
+@property (nonatomic,strong) IndexController* indexController;
 
 /***账户的值**/
 @property (nonatomic , strong) NSString* nameValue;
@@ -143,7 +145,6 @@
     [self openLoginMessage];
     
     NSString *dataString = [[ NSString alloc] initWithData:synchronousHttpData.data encoding:NSUTF8StringEncoding];
-    NSLog(dataString);
     //判断返回的东西
     if ([StringHelper isBlankString:dataString] ) {
         //如果是nil  说明用户名密码错误
@@ -156,7 +157,11 @@
     }else{
         
         //如果正确就进行跳转
-        
+        //xib跳转
+        self.indexController=[[IndexController alloc]initWithNibName:@"IndexController" bundle:nil];
+        [self presentViewController:self.indexController animated:YES completion:^{
+            
+        }];
         
         
     }
@@ -191,6 +196,7 @@
     NSString *dataString=[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
     switch (what) {
         case 1:
+            
             break;
             
         default:

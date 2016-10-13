@@ -26,6 +26,18 @@
 /****判断网络是否链接****/
 -(void) netISOpen:(NSError*)  error;
 
+/*****页面重新载入*/
+-(void) reloadDidPush: (UIWebView*) webView;
+
+/*****停止载入*/
+-(void) stopDidPush: (UIWebView*) webView;
+
+/*****返回*/
+-(void) backDidPush: (UIWebView*) webView;
+
+/*****前进*/
+-(void) forwardDidPush: (UIWebView*) webView;
+
 
 
 @end
