@@ -55,4 +55,24 @@
         return;
     }
 }
+
+/*****页面重新载入*/
+-(void) reloadDidPush: (UIWebView*) webView{
+    [webView reload];
+}
+
+/*****停止载入*/
+-(void) stopDidPush: (UIWebView*) webView{
+    [webView stopLoading];
+}
+
+/*****返回*/
+-(void) backDidPush: (UIWebView*) webView{
+    [webView goBack];
+}
+
+/*****前进*/
+-(void) forwardDidPush: (UIWebView*) webView{
+    [webView goForward];
+}
 @end
