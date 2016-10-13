@@ -14,14 +14,13 @@
 #import "IndexController.h"
 #import "UserDelegate.h"
 #import "FactoryHelper.h"
-#import "LoginInfoBean.h"
-#import "JsonUtil.h"
 #import "SynchronousHttpData.h"
 #import "IndexController.h"
 
 @interface AdminController ()
 @property (nonatomic,strong) IndexController* indexController;
 
+/***账户的值**/
 @property (nonatomic , strong) NSString* nameValue;
 
 /**密码的值***/
