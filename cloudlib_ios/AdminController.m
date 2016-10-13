@@ -146,9 +146,8 @@
     [self openLoginMessage];
     
     NSString *dataString = [[ NSString alloc] initWithData:synchronousHttpData.data encoding:NSUTF8StringEncoding];
-    NSLog(@"%@",dataString);
-    if([StringHelper isBlankString:dataString]){
-        //判断返回的东西
+    //判断返回的东西
+    if ([StringHelper isBlankString:dataString] ) {
         //如果是nil  说明用户名密码错误
         //1.1 先关闭提示
         [self closeLoginMessage];
@@ -157,8 +156,8 @@
         //1.3几秒后关闭
         [NSTimer scheduledTimerWithTimeInterval:3 target:self selector:@selector(closeErrorMessage) userInfo:nil repeats:NO];
     }else{
-        // UserBean *userBean=[JsonUtil paresJsonToUser:dataString];
         
+        //如果正确就进行跳转
         //xib跳转
         self.indexController=[[IndexController alloc]initWithNibName:@"IndexController" bundle:nil];
         [self presentViewController:self.indexController animated:YES completion:^{
@@ -171,11 +170,11 @@
     
     
     
+    
+    
+    
+    
 }
-
-
-
-
 
 - (IBAction)nameChange {
     [self setEnableLoginBt];
