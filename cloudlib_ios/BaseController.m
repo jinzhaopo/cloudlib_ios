@@ -75,4 +75,25 @@
 -(void) forwardDidPush: (UIWebView*) webView{
     [webView goForward];
 }
+
+/**加载本地html***/
+-(void) loadLocationHtmlFile:(UIWebView*) webView and:(NSString*) filePath;{
+    //第一种方法：mobile是根目录，name是文件名称，html是文件类型
+    
+    //NSString* path = [[NSBundle mainBundle] pathForResource:filePath ofType:@"html" inDirectory:nil];
+    
+    //[webView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:path]]]; //加载本地文件
+    
+    //第二种方法：直接填写图片名,   css文件名
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:filePath ofType:@"html"];
+    
+    NSString *htmlString = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
+    
+    NSURL *baseURL = [NSURL fileURLWithPath:htmlString];
+    
+    [webView loadHTMLString:htmlString baseURL:baseURL];
+    
+}
+
 @end
