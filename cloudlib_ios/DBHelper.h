@@ -20,7 +20,7 @@
 
 - (void) deleteModel:(NSString *)modelName columnName:(NSString *)columnName columnValue:(id) columnValue valueType:(NSString *)format;
 
-- (void) clearModels;
+- (void) clearModels:(NSString *)modelName;
 
 - (id) updateModel:(NSString *)modelName columnName:(NSString *)columnName columnValue:(id) columnValue valueType:(NSString *)format;
 

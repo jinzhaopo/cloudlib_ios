@@ -23,7 +23,7 @@ valueType:(NSString *)valueType userId:(NSNumber *)userId userName:(NSString *) 
 - (void) deleteUser:(NSString *)columnName columnValue:(id)columnValue
           valueType:(NSString *)valueType;
 
-- (void) clearUsers;
+- (void) clearUsers:(NSString *)modelName;
 
 - (bool) isLoginJudge:(NSNumber *) loginJudge;
 @end

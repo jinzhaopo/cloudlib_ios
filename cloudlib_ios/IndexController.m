@@ -7,6 +7,7 @@
 //
 
 #import "IndexController.h"
+#import "LoginInfoBean.h"
 
 @interface IndexController ()
 

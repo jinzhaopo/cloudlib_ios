@@ -14,7 +14,8 @@
 #import "IndexController.h"
 #import "UserDelegate.h"
 #import "FactoryHelper.h"
-#import "LoginInfo.h"
+#import "LoginInfoBean.h"
+#import "JsonUtil.h"
 
 @interface AdminController ()
 
@@ -66,6 +67,8 @@
 @implementation AdminController
 
 - (void)viewDidLoad {
+    NSDictionary *loginBean=[LoginInfoBean getLoginInfo];
+    NSLog(@"第二个loginBean:%@",loginBean);
     [super viewDidLoad];
     
     //圈圈隐藏
@@ -133,14 +136,14 @@
         //1.3几秒后关闭
         [NSTimer scheduledTimerWithTimeInterval:3 target:self selector:@selector(closeErrorMessage) userInfo:nil repeats:NO];
     }else{
-        
+       // UserBean *userBean=[JsonUtil paresJsonToUser:dataString];
+        NSDictionary *dic=[LoginInfoBean getLoginInfo];
+         NSLog(@"第三个loginBean:%@",dic);
+        //[loginBean setLoginInfoProperties:userBean.userId barcode:userBean.barcode userName:userBean.userName password:userBean.password schoolId:userBean.schoolId type:userBean.type loginJudge:userBean.loginJudge schoolName:nil];
         //如果正确就进行跳转
         //[self go2ViewByXib:[[IndexController alloc] init] and: @"IndexController"];
-        UserDelegate *userDelegate=[FactoryHelper initFactoryHelperAndgetDBInstance];
-        [userDelegate clearUsers];
-        
-        //[userDelegate saveUser:<#(NSNumber *)#> userName:<#(NSString *)#> barcode:<#(NSString *)#> password:<#(NSString *)#> schoolId:<#(NSNumber *)#> type:<#(NSNumber *)#> loginJudge:<#(NSNumber *)#> message:<#(NSString *)#> teacherId:<#(NSNumber *)#>];
-        
+        //UserDelegate *userDelegate=[FactoryHelper initFactoryHelperAndgetDBInstance];
+        //[userDelegate clearUsers:@"User"];
         //[self loadWebView:@"/ios_project/苹果页面备份/html/index.html"];
         
     }
@@ -150,7 +153,7 @@
 //----------组件----------
 
 - (IBAction)goBack {
-    [self backView];
+    //[self backView];
 }
 
 - (IBAction)login {
@@ -197,6 +200,7 @@
     if(!error){
         NSString *dataString=[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
         //NSLog(@"%@",error);
+        NSLog(@"哈哈哈哈哈：%@",dataString);
         switch (what) {
             case 1:
                 [self loginAction: dataString];

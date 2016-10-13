@@ -9,6 +9,7 @@
 #import "LoginSwitchController.h"
 #import "AdminController.h"
 #import "IndexController.h"
+#import "LoginInfoBean.h"
 
 @interface LoginSwitchController ()
 
@@ -27,6 +28,8 @@
 @implementation LoginSwitchController
 
 - (void)viewDidLoad {
+    NSDictionary *loginBean=[LoginInfoBean getLoginInfo];
+    NSLog(@"第一个loginBean:%@",loginBean);
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }

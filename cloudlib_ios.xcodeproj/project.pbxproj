@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		181C476B1DADD1F90029F38B /* SynchronousHttpData.m in Sources */ = {isa = PBXBuildFile; fileRef = 181C476A1DADD1F90029F38B /* SynchronousHttpData.m */; };
+		18509C191DAE10970021EB83 /* JsonUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 18509C181DAE10970021EB83 /* JsonUtil.m */; };
+		18509C1E1DAE1A3C0021EB83 /* UserBean.m in Sources */ = {isa = PBXBuildFile; fileRef = 18509C1D1DAE1A3C0021EB83 /* UserBean.m */; };
+		185647541DAE20F90074EFBA /* LoginInfoBean.h in Sources */ = {isa = PBXBuildFile; fileRef = 185647531DAE20F90074EFBA /* LoginInfoBean.h */; };
+		185647561DAE21380074EFBA /* LoginInfoBean.m in Sources */ = {isa = PBXBuildFile; fileRef = 185647551DAE21380074EFBA /* LoginInfoBean.m */; };
 		1856BAFB1D9CEA99004D8851 /* AdminController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1856BAF91D9CEA99004D8851 /* AdminController.m */; };
 		1856BAFC1D9CEA99004D8851 /* AdminController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1856BAFA1D9CEA99004D8851 /* AdminController.xib */; };
 		1878231F1D9B9AB40025BC3E /* StringHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1878231E1D9B9AB40025BC3E /* StringHelper.m */; };
@@ -111,7 +115,6 @@
 		18FFA5461D9B95FE00258011 /* FactoryHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FFA5441D9B95FE00258011 /* FactoryHelper.m */; };
 		18FFA54C1D9B968100258011 /* HttpHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FFA54B1D9B968100258011 /* HttpHelper.m */; };
 		18FFA5501D9B96D000258011 /* UserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FFA54F1D9B96D000258011 /* UserDelegate.m */; };
-		A140F0DF1DACC2CA00500834 /* bootstrap in Resources */ = {isa = PBXBuildFile; fileRef = A140F0D71DACC2CA00500834 /* bootstrap */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +130,12 @@
 /* Begin PBXFileReference section */
 		181C47691DADD1F90029F38B /* SynchronousHttpData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynchronousHttpData.h; sourceTree = "<group>"; };
 		181C476A1DADD1F90029F38B /* SynchronousHttpData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SynchronousHttpData.m; sourceTree = "<group>"; };
+		18509C171DAE10710021EB83 /* JsonUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JsonUtil.h; sourceTree = "<group>"; };
+		18509C181DAE10970021EB83 /* JsonUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonUtil.m; sourceTree = "<group>"; };
+		18509C1D1DAE1A3C0021EB83 /* UserBean.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserBean.m; sourceTree = "<group>"; };
+		18509C1F1DAE1A4F0021EB83 /* UserBean.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserBean.h; sourceTree = "<group>"; };
+		185647531DAE20F90074EFBA /* LoginInfoBean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginInfoBean.h; sourceTree = "<group>"; };
+		185647551DAE21380074EFBA /* LoginInfoBean.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginInfoBean.m; sourceTree = "<group>"; };
 		1856BAF81D9CEA99004D8851 /* AdminController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdminController.h; sourceTree = "<group>"; };
 		1856BAF91D9CEA99004D8851 /* AdminController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdminController.m; sourceTree = "<group>"; };
 		1856BAFA1D9CEA99004D8851 /* AdminController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdminController.xib; sourceTree = "<group>"; };
@@ -136,7 +145,6 @@
 		187823211D9B9AC90025BC3E /* BaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseController.m; sourceTree = "<group>"; };
 		18B38DD91D9BA25200EF2885 /* LoginSwitchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginSwitchController.h; sourceTree = "<group>"; };
 		18B38DDA1D9BA25200EF2885 /* LoginSwitchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginSwitchController.m; sourceTree = "<group>"; };
-		18C820EF1DAB644B009ADFD5 /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
 		18C820F11DAB88B9009ADFD5 /* CoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataModel.xcdatamodel; sourceTree = "<group>"; };
 		18C820F31DAB89B1009ADFD5 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		18C820F41DAB89B1009ADFD5 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
@@ -249,7 +257,6 @@
 		18FFA54B1D9B968100258011 /* HttpHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpHelper.m; sourceTree = "<group>"; };
 		18FFA54E1D9B96D000258011 /* UserDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDelegate.h; sourceTree = "<group>"; };
 		18FFA54F1D9B96D000258011 /* UserDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDelegate.m; sourceTree = "<group>"; };
-		A140F0D71DACC2CA00500834 /* bootstrap */ = {isa = PBXFileReference; lastKnownFileType = folder; path = bootstrap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -270,6 +277,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18509C1A1DAE18860021EB83 /* bean */ = {
+			isa = PBXGroup;
+			children = (
+				18509C1D1DAE1A3C0021EB83 /* UserBean.m */,
+				18509C1F1DAE1A4F0021EB83 /* UserBean.h */,
+				185647551DAE21380074EFBA /* LoginInfoBean.m */,
+				185647531DAE20F90074EFBA /* LoginInfoBean.h */,
+			);
+			name = bean;
+			sourceTree = "<group>";
+		};
 		1856BAF21D9CE7EA004D8851 /* index */ = {
 			isa = PBXGroup;
 			children = (
@@ -295,6 +313,8 @@
 				1878231E1D9B9AB40025BC3E /* StringHelper.m */,
 				18F553D11DA8E3C700E44F99 /* EncryptionUtil.h */,
 				18F553D21DA8E3C700E44F99 /* EncryptionUtil.m */,
+				18509C171DAE10710021EB83 /* JsonUtil.h */,
+				18509C181DAE10970021EB83 /* JsonUtil.m */,
 			);
 			name = util;
 			sourceTree = "<group>";
@@ -501,6 +521,7 @@
 		18FFA5121D9B93FF00258011 /* cloudlib_ios */ = {
 			isa = PBXGroup;
 			children = (
+				18509C1A1DAE18860021EB83 /* bean */,
 				18C820E31DAB25EC009ADFD5 /* html */,
 				1878231C1D9B9AA90025BC3E /* util */,
 				187823171D9B997F0025BC3E /* CoreData */,
@@ -559,7 +580,6 @@
 			isa = PBXGroup;
 			children = (
 				18FFA5481D9B964100258011 /* ComonDefine.h */,
-				18C820EF1DAB644B009ADFD5 /* Constant.h */,
 			);
 			name = const;
 			sourceTree = "<group>";
@@ -785,7 +805,6 @@
 				18EC2ED51DACC87300512792 /* back.psd in Resources */,
 				18EC2EB51DACC87300512792 /* bodyBg3.jpg in Resources */,
 				18EC2E5F1DACC86900512792 /* bootstrap.min_2.css in Resources */,
-				A140F0DF1DACC2CA00500834 /* bootstrap in Resources */,
 				18EC2EBF1DACC87300512792 /* img_main_1.jpg in Resources */,
 				18EC2EB01DACC87300512792 /* 46.jpg in Resources */,
 				18EC2EB21DACC87300512792 /* 46_3.jpg in Resources */,
@@ -807,8 +826,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				185647541DAE20F90074EFBA /* LoginInfoBean.h in Sources */,
 				18FFA5501D9B96D000258011 /* UserDelegate.m in Sources */,
 				1856BAFB1D9CEA99004D8851 /* AdminController.m in Sources */,
+				18509C191DAE10970021EB83 /* JsonUtil.m in Sources */,
 				18FFA54C1D9B968100258011 /* HttpHelper.m in Sources */,
 				18FFA5191D9B93FF00258011 /* AppDelegate.m in Sources */,
 				18B38DDB1D9BA25200EF2885 /* LoginSwitchController.m in Sources */,
@@ -824,7 +845,9 @@
 				1878231F1D9B9AB40025BC3E /* StringHelper.m in Sources */,
 				18FFA5451D9B95FE00258011 /* DBHelper.m in Sources */,
 				18EC2E5D1DACC86900512792 /* bootstrap.css.map in Sources */,
+				18509C1E1DAE1A3C0021EB83 /* UserBean.m in Sources */,
 				18C820F21DAB88B9009ADFD5 /* CoreDataModel.xcdatamodeld in Sources */,
+				185647561DAE21380074EFBA /* LoginInfoBean.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

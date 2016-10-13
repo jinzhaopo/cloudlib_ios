@@ -55,8 +55,8 @@
 }
 
 //清除所有用户
-- (void) clearUsers{
-    [self clearModels];
+- (void) clearUsers:(NSString *)modelName{
+    [self clearModels:modelName];
 }
 
 //判断用户是否已经登录
