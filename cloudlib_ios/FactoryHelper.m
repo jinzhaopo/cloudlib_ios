@@ -10,13 +10,14 @@
 #import "ComonDefine.h"
 @implementation FactoryHelper
 
-+ (id) initFactoryHelperAndgetDBInstance{
-    return [[[FactoryHelper alloc] init] getDBInstance];
++ (id) initFactoryHelperAndgetDBInstance:(NSString *)delegateName{
+    return [[[FactoryHelper alloc] init] getDBInstance:delegateName];
 }
 
-- (id) getDBInstance{
+- (id) getDBInstance:(NSString *)delegateName{
+    Class clazz = NSClassFromString(delegateName);
     if(self->_instance==nil){
-        self->_instance=[[DBHelper alloc] init];
+        self->_instance=[[clazz alloc] init];
         self->_instance.managedObjectContxt=[FactoryHelper initManagedContext];
         self->_instance.managedObjectModel=[FactoryHelper initManagedObjectModel];
         self->_instance.persistentStoreCoordinator=[FactoryHelper persistentStoreCoordinator:self->_instance.managedObjectModel];

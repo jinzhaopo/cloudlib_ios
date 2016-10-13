@@ -23,28 +23,29 @@
     [super setUp];
     
     NSLog(@"aaaaaaaaaaaaa");
-    UserDelegate *userDelegate=[FactoryHelper initFactoryHelperAndgetDBInstance];
+    UserDelegate *userDelegate=[FactoryHelper initFactoryHelperAndgetDBInstance:@"UserDelegate"];
     
     //新增对象
     User *user=[userDelegate saveModel:@"User"];
     user.userName=@"zs";
     user.password=@"123";
     [userDelegate commitData];
-    
     //删除对象
-    //[userDelegate deleteModel:@"User" columnName:@"userName" columnValue:@"'zs'" valueType:@"%@"];
+    [userDelegate deleteModel:@"User" columnName:@"userName" columnValue:@"'zs'" valueType:@"%@"];
 
     //更新对象
-    //user=[userDelegate updateModel:@"User" columnName:@"userName"columnValue:@"'zs'" valueType:@"%@"];
-    //user.userName=@"lisi";
-    //user.password=@"789";
-    //[userDelegate commitData];
+    user=[userDelegate updateModel:@"User" columnName:@"userName"columnValue:@"'zs'" valueType:@"%@"];
+    user.userName=@"lisi";
+    user.password=@"789";
+    [userDelegate commitData];
     
     //查询对象
-    NSArray *array=[userDelegate query:@"User" coreDataSQL:@"userName='zs'"];
-    for(User *u in array){
-        NSLog(@"%@",u.userName);
-    }
+    //NSArray *array=[userDelegate query:@"User" coreDataSQL:@"1=1"];
+    //for(User *u in array){
+      //  NSLog(@"%@",u.userName);
+    //}
+    NSLog(@"%@",userDelegate);
+   [userDelegate clearUsers:@"User"];
     
     // Put setup code here. This method is called before the invocation of each test method in the class.
 }

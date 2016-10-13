@@ -10,10 +10,10 @@
 @implementation LoginInfoBean
 static NSDictionary *_dic;
 //获取登录后的信息
-+(NSDictionary *) getLoginInfo{
++(NSDictionary *) getLoginInfo:(NSDictionary *)dic{
     
     if(_dic==nil){
-        _dic=[[NSDictionary alloc] init];
+        _dic=dic;
     }
     return _dic;
 }

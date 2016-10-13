@@ -9,9 +9,12 @@
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
 #import "DBHelper.h"
+
+static DBHelper *instanceBean;
+
 @interface FactoryHelper:NSObject
 
 @property(nonatomic,strong) DBHelper *instance;
 
-+ (id) initFactoryHelperAndgetDBInstance;
++ (id) initFactoryHelperAndgetDBInstance:(NSString *)delegateName;
 @end
