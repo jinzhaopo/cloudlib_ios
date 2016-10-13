@@ -23,6 +23,9 @@
  **/
 -(void) httpAction:(int) what and: (NSData *)  data and: (NSURLResponse * )  response and: (NSError *)  error;
 
+/****判断网络是否链接****/
+-(void) netISOpen:(NSError*)  error;
+
 
 
 @end

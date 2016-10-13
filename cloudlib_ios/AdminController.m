@@ -120,12 +120,33 @@
 }
 /**关闭错误提示**/
 -(void) closeErrorMessage{
-    //  动画
     self.messageLabelView.hidden = true;
 }
-/**登入的动作**/
--(void) loginAction:(NSString*) dataString{
+
+//----------组件----------
+
+- (IBAction)goBack {
+    [self goBack4PresentViewController];
+}
+
+- (IBAction)login {
+    //TODO 登入
+    SynchronousHttpData *synchronousHttpData = [[SynchronousHttpData alloc] init];
+    NSString *param = [[[@"userName=" stringByAppendingString:self.nameValue] stringByAppendingString:@"&password="] stringByAppendingString:self.passwordValue];
+    NSString *url = [D_HTTP_URL stringByAppendingString:D_HTTP_METHOD_LOGINFORTEACHER];
     
+    synchronousHttpData.url = url;
+    synchronousHttpData.param = param;
+    
+    
+    
+    [HttpHelper getBySynchronousHttpData:synchronousHttpData];
+    
+    //等待登入的提示
+    [self openLoginMessage];
+    
+    NSString *dataString = [[ NSString alloc] initWithData:synchronousHttpData.data encoding:NSUTF8StringEncoding];
+    NSLog(dataString);
     //判断返回的东西
     if ([StringHelper isBlankString:dataString] ) {
         //如果是nil  说明用户名密码错误
@@ -167,12 +188,7 @@
     httpData.what = 1;
     httpData.baseController = self;
     
-    [HttpHelper get:httpData];
     
-    //执行登入的动作
-    //开启等待的提示
-    [self openLoginMessage];
-    //[NSThread sleepForTimeInterval:1.0f];
     
     
     
@@ -212,6 +228,7 @@
     }else{
         
     }
+    
 }
 
 
