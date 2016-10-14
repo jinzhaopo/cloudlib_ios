@@ -26,4 +26,7 @@ valueType:(NSString *)valueType userId:(NSNumber *)userId userName:(NSString *) 
 - (void) clearUsers:(NSString *)modelName;
 
 - (bool) isLoginJudge:(NSNumber *) loginJudge;
+
+- (NSArray *) queryAllUsers:(NSString *)modelName coreSQL:(NSString *)coreSQL;
+
 @end

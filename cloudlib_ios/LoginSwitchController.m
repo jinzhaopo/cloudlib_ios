@@ -10,11 +10,14 @@
 #import "AdminController.h"
 #import "IndexController.h"
 #import "LoginInfoBean.h"
+#import "UserDelegate.h"
+#import "FactoryHelper.h"
 
 @interface LoginSwitchController ()
 
 @property(nonatomic,strong) AdminController *adminController;
 
+@property(nonatomic,strong) IndexController *indexController;
 //---控件---
 /**用户按钮*/
 - (IBAction)userBt;
@@ -36,7 +39,20 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+- (void)viewDidAppear:(BOOL) animated{
+    [super viewDidAppear:animated];
+    //如果用户已经登录，则跳过登录页，直接前往主页
+    UserDelegate *userDelegate=[FactoryHelper initFactoryHelperAndgetDBInstance:@"UserDelegate"];
+    NSArray *array=[userDelegate queryAllUsers:@"User" coreSQL:@"1=1"];
+    if([array count]){
+        self.indexController=[[IndexController alloc]initWithNibName:@"IndexController" bundle:nil];
+        [self presentViewController:self.indexController animated:YES completion:^{
+        }];
+        //IndexController *indexController=[[IndexController alloc] init];
+        //[self loadXIB:@"IndexController" and:indexController];
+        //[self presentViewController:indexController animated:YES completion:nil];
+    }
+}
 //------控键－－－－－－－－－－
 //用户按钮事件
 
