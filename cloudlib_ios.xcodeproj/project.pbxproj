@@ -85,7 +85,7 @@
 		18F802351DA9EE4F00ABE3F5 /* IndexController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndexController.h; sourceTree = "<group>"; };
 		18F802361DA9EE4F00ABE3F5 /* IndexController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndexController.m; sourceTree = "<group>"; };
 		18F802381DA9EEB100ABE3F5 /* IndexController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IndexController.xib; sourceTree = "<group>"; };
-		18FFA5101D9B93FF00258011 /* cloudlib_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cloudlib_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18FFA5101D9B93FF00258011 /* cloudlib_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = cloudlib_ios.app; path = "/Users/apple/Documents/ios_workspace/cloudlib_ios/build/Debug-iphoneos/cloudlib_ios.app"; sourceTree = "<absolute>"; };
 		18FFA5141D9B93FF00258011 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18FFA5151D9B93FF00258011 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		18FFA5171D9B93FF00258011 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -93,7 +93,7 @@
 		18FFA51E1D9B93FF00258011 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18FFA5201D9B93FF00258011 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		18FFA5231D9B93FF00258011 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		18FFA5291D9B93FF00258011 /* cloudlib_iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cloudlib_iosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18FFA5291D9B93FF00258011 /* cloudlib_iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = cloudlib_iosTests.xctest; path = "/Users/apple/Documents/ios_workspace/cloudlib_ios/build/Debug-iphoneos/cloudlib_iosTests.xctest"; sourceTree = "<absolute>"; };
 		18FFA52E1D9B93FF00258011 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18FFA52F1D9B93FF00258011 /* cloudlib_iosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cloudlib_iosTests.m; sourceTree = "<group>"; };
 		18FFA5411D9B95FE00258011 /* DBHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBHelper.h; sourceTree = "<group>"; };
@@ -125,6 +125,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		182A562D1DB080440058F80A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		18509C1A1DAE18860021EB83 /* bean */ = {
 			isa = PBXGroup;
 			children = (
@@ -188,19 +195,10 @@
 		18FFA5071D9B93FF00258011 = {
 			isa = PBXGroup;
 			children = (
+				182A562D1DB080440058F80A /* Products */,
 				18FFA5121D9B93FF00258011 /* cloudlib_ios */,
 				18FFA52C1D9B93FF00258011 /* cloudlib_iosTests */,
-				18FFA5111D9B93FF00258011 /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		18FFA5111D9B93FF00258011 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				18FFA5101D9B93FF00258011 /* cloudlib_ios.app */,
-				18FFA5291D9B93FF00258011 /* cloudlib_iosTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		18FFA5121D9B93FF00258011 /* cloudlib_ios */ = {
@@ -394,7 +392,7 @@
 				Base,
 			);
 			mainGroup = 18FFA5071D9B93FF00258011;
-			productRefGroup = 18FFA5111D9B93FF00258011 /* Products */;
+			productRefGroup = 18FFA5071D9B93FF00258011;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
