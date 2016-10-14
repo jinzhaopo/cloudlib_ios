@@ -10,10 +10,12 @@
 #import "AdminController.h"
 #import "IndexController.h"
 #import "LoginInfoBean.h"
+#import "UserController.h"
 
 @interface LoginSwitchController ()
 
 @property(nonatomic,strong) AdminController *adminController;
+@property(nonatomic,strong) UserController *userController;
 
 //---控件---
 /**用户按钮*/
@@ -41,6 +43,11 @@
 //用户按钮事件
 
 - (IBAction)userBt {
+    //xib 跳转
+    self.userController=[[UserController alloc]initWithNibName:@"UserController" bundle:nil];
+    [self presentViewController:self.userController animated:YES completion:^{
+        
+    }];
    
 }
 

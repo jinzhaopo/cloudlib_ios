@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		181C476B1DADD1F90029F38B /* SynchronousHttpData.m in Sources */ = {isa = PBXBuildFile; fileRef = 181C476A1DADD1F90029F38B /* SynchronousHttpData.m */; };
+		182A56261DB069690058F80A /* UserController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182A56241DB069690058F80A /* UserController.m */; };
+		182A56271DB069690058F80A /* UserController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182A56251DB069690058F80A /* UserController.xib */; };
+		182A562B1DB077B20058F80A /* SwitchSchoolController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182A56291DB077B20058F80A /* SwitchSchoolController.m */; };
+		182A562C1DB077B20058F80A /* SwitchSchoolController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182A562A1DB077B20058F80A /* SwitchSchoolController.xib */; };
 		18509C191DAE10970021EB83 /* JsonUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 18509C181DAE10970021EB83 /* JsonUtil.m */; };
 		18509C1E1DAE1A3C0021EB83 /* UserBean.m in Sources */ = {isa = PBXBuildFile; fileRef = 18509C1D1DAE1A3C0021EB83 /* UserBean.m */; };
 		185647541DAE20F90074EFBA /* LoginInfoBean.h in Sources */ = {isa = PBXBuildFile; fileRef = 185647531DAE20F90074EFBA /* LoginInfoBean.h */; };
@@ -49,6 +53,12 @@
 /* Begin PBXFileReference section */
 		181C47691DADD1F90029F38B /* SynchronousHttpData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynchronousHttpData.h; sourceTree = "<group>"; };
 		181C476A1DADD1F90029F38B /* SynchronousHttpData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SynchronousHttpData.m; sourceTree = "<group>"; };
+		182A56231DB069690058F80A /* UserController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserController.h; sourceTree = "<group>"; };
+		182A56241DB069690058F80A /* UserController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserController.m; sourceTree = "<group>"; };
+		182A56251DB069690058F80A /* UserController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserController.xib; sourceTree = "<group>"; };
+		182A56281DB077B20058F80A /* SwitchSchoolController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwitchSchoolController.h; sourceTree = "<group>"; };
+		182A56291DB077B20058F80A /* SwitchSchoolController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwitchSchoolController.m; sourceTree = "<group>"; };
+		182A562A1DB077B20058F80A /* SwitchSchoolController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SwitchSchoolController.xib; sourceTree = "<group>"; };
 		18509C171DAE10710021EB83 /* JsonUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JsonUtil.h; sourceTree = "<group>"; };
 		18509C181DAE10970021EB83 /* JsonUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonUtil.m; sourceTree = "<group>"; };
 		18509C1D1DAE1A3C0021EB83 /* UserBean.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserBean.m; sourceTree = "<group>"; };
@@ -165,6 +175,12 @@
 				1856BAF81D9CEA99004D8851 /* AdminController.h */,
 				1856BAF91D9CEA99004D8851 /* AdminController.m */,
 				1856BAFA1D9CEA99004D8851 /* AdminController.xib */,
+				182A56231DB069690058F80A /* UserController.h */,
+				182A56241DB069690058F80A /* UserController.m */,
+				182A56251DB069690058F80A /* UserController.xib */,
+				182A56281DB077B20058F80A /* SwitchSchoolController.h */,
+				182A56291DB077B20058F80A /* SwitchSchoolController.m */,
+				182A562A1DB077B20058F80A /* SwitchSchoolController.xib */,
 			);
 			name = login;
 			sourceTree = "<group>";
@@ -393,6 +409,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				182A56271DB069690058F80A /* UserController.xib in Resources */,
+				182A562C1DB077B20058F80A /* SwitchSchoolController.xib in Resources */,
 				18F802391DA9EEB100ABE3F5 /* IndexController.xib in Resources */,
 				188FA9A21DAF715F0076FC5B /* html in Resources */,
 				18FFA51F1D9B93FF00258011 /* Main.storyboard in Resources */,
@@ -431,7 +449,9 @@
 				18F802371DA9EE4F00ABE3F5 /* IndexController.m in Sources */,
 				18F553D01DA892A100E44F99 /* HttpData.m in Sources */,
 				187823221D9B9AC90025BC3E /* BaseController.m in Sources */,
+				182A56261DB069690058F80A /* UserController.m in Sources */,
 				1878231F1D9B9AB40025BC3E /* StringHelper.m in Sources */,
+				182A562B1DB077B20058F80A /* SwitchSchoolController.m in Sources */,
 				18FFA5451D9B95FE00258011 /* DBHelper.m in Sources */,
 				18509C1E1DAE1A3C0021EB83 /* UserBean.m in Sources */,
 				18C820F21DAB88B9009ADFD5 /* CoreDataModel.xcdatamodeld in Sources */,
