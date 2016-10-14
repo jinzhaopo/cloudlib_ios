@@ -64,4 +64,10 @@
     return [loginJudge isEqual:@1];
 }
 
+//查询所有用户
+- (NSArray *) queryAllUsers:(NSString *)modelName coreSQL:(NSString *)coreSQL{
+    NSArray *array=[self query:modelName coreDataSQL:coreSQL];
+    return array;
+}
+
 @end
