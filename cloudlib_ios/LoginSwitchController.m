@@ -12,6 +12,8 @@
 #import "LoginInfoBean.h"
 #import "UserDelegate.h"
 #import "FactoryHelper.h"
+#import "UserController.h"
+#import "ComonDefine.h"
 
 @interface LoginSwitchController ()
 
@@ -46,12 +48,11 @@
     UserDelegate *userDelegate=[FactoryHelper initFactoryHelperAndgetDBInstance:@"UserDelegate"];
     NSArray *array=[userDelegate queryAllUsers:@"User" coreSQL:@"1=1"];
     if([array count]){
+        User *user=array[0];
+        [LoginInfoBean setLoginInfoProperties:user.userId barcode:user.barcode userName:user.userName password:user.password schoolId:user.schoolId type:user.type loginJudge:user.loginJudge schoolName:user.message];
         self.indexController=[[IndexController alloc]initWithNibName:@"IndexController" bundle:nil];
         [self presentViewController:self.indexController animated:YES completion:^{
-        }];
-        //IndexController *indexController=[[IndexController alloc] init];
-        //[self loadXIB:@"IndexController" and:indexController];
-        //[self presentViewController:indexController animated:YES completion:nil];
+                   }];
     }
 }
 //------控键－－－－－－－－－－

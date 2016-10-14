@@ -22,7 +22,7 @@
 - (void)setUp {
     [super setUp];
     
-    NSLog(@"aaaaaaaaaaaaa");
+    //NSLog(@"aaaaaaaaaaaaa");
     UserDelegate *userDelegate=[FactoryHelper initFactoryHelperAndgetDBInstance:@"UserDelegate"];
     
     //新增对象
@@ -40,10 +40,10 @@
     //[userDelegate commitData];
     
     //查询对象
-    NSArray *array=[userDelegate query:@"User" coreDataSQL:@"1=1"];
-    for(User *u in array){
-        NSLog(@"%@",u.userName);
-    }
+    //NSArray *array=[userDelegate query:@"User" coreDataSQL:@"1=1"];
+    //for(User *u in array){
+        //NSLog(@"%@",u.userName);
+    //}
     
    [userDelegate clearUsers:@"User"];
     
