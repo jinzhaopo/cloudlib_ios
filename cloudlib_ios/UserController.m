@@ -7,8 +7,10 @@
 //
 
 #import "UserController.h"
+#import "SwitchSchoolController.h"
 
 @interface UserController ()
+@property(nonatomic,strong) SwitchSchoolController *switchSchoolController;
 
 /***action**/
 /**选择学校action**/
@@ -37,6 +39,11 @@
 /**学校action***/
 
 - (IBAction)schoolBtView:(id)sender {
-    NSLog(@"asdfas");
+    //跳转到选择学校那个页面
+    //xib 跳转
+    self.switchSchoolController=[[SwitchSchoolController alloc]initWithNibName:@"SwitchSchoolController" bundle:nil];
+    [self presentViewController:self.switchSchoolController animated:YES completion:^{
+        
+    }];
 }
 @end
