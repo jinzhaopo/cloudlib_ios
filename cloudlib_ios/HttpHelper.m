@@ -9,7 +9,6 @@
 #import "ComonDefine.h"
 #import "HttpHelper.h"
 #import "BaseController.h"
-//#import <ASIFormDataRequest.h>
 @interface HttpHelper()
 
 
@@ -280,41 +279,4 @@
     return synchronousHttpData;
 }
 
-/*
-+(void) updateVersion{
-    //http://www.lvtao.net/ios/508.html
-    NSString *version = @"";
-    NSURL *url = [NSURL URLWithString:@"http://itunes.apple.com/lookup?id=954270"];
-    ASIFormDataRequest versionRequest = [ASIFormDataRequest requestWithURL:url];
-    [versionRequest setRequestMethod:@"GET"];
-    [versionRequest setDelegate:self];
-    [versionRequest setTimeOutSeconds:150];
-    [versionRequest addRequestHeader:@"Content-Type" value:@"application/json"];
-    [versionRequest startSynchronous];
-    
-    //Response string of our REST call
-    NSString* jsonResponseString = [versionRequest responseString];
-    NSDictionary *loginAuthenticationResponse = [jsonResponseString objectFromJSONString];
-    NSArray *configData = [loginAuthenticationResponse valueForKey:@"results"];
-    for (id config in configData)
-    {
-        version = [config valueForKey:@"version"];
-    }
-    //Check your version with the version in app store
-    if (![version isEqualToString:[itsUserDefaults objectForKey:@"version"]])
-    {
-        ProAlertView *createUserResponseAlert = [[ProAlertView alloc] initWithTitle:@"New Version!!" message: @"A new version of app is available to download" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles: @"Download", nil];
-        [createUserResponseAlert show]; 
-        [createUserResponseAlert release];
-    }
-}
-
-- (void)alertView:(UIAlertView *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
-    // the user clicked one of the OK/Cancel buttons
-    if (buttonIndex == 1)
-    {
-        NSString *iTunesLink = @"itms-apps://phobos.apple.com/WebObjects/MZStore.woa/wa/viewSoftwareUpdate?id=<appid>&mt=8";
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:iTunesLink]];
-    }
- */
 @end
