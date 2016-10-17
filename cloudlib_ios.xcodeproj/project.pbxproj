@@ -87,28 +87,6 @@
 		18F802381DA9EEB100ABE3F5 /* IndexController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IndexController.xib; sourceTree = "<group>"; };
 		18FECCBD1DB459C7000F6E8F /* cloudlib_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cloudlib_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18FECCBE1DB459C7000F6E8F /* cloudlib_iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cloudlib_iosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		18FECCC01DB45B39000F6E8F /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
-		18FECCC11DB45B39000F6E8F /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
-		18FECCC21DB45B39000F6E8F /* ASICacheDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
-		18FECCC31DB45B39000F6E8F /* ASIDataCompressor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASIDataCompressor.h; sourceTree = "<group>"; };
-		18FECCC41DB45B39000F6E8F /* ASIDataCompressor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASIDataCompressor.m; sourceTree = "<group>"; };
-		18FECCC51DB45B39000F6E8F /* ASIDataDecompressor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASIDataDecompressor.h; sourceTree = "<group>"; };
-		18FECCC61DB45B39000F6E8F /* ASIDataDecompressor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASIDataDecompressor.m; sourceTree = "<group>"; };
-		18FECCC71DB45B39000F6E8F /* ASIDownloadCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASIDownloadCache.h; sourceTree = "<group>"; };
-		18FECCC81DB45B39000F6E8F /* ASIDownloadCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASIDownloadCache.m; sourceTree = "<group>"; };
-		18FECCC91DB45B39000F6E8F /* ASIFormDataRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASIFormDataRequest.h; sourceTree = "<group>"; };
-		18FECCCA1DB45B39000F6E8F /* ASIFormDataRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASIFormDataRequest.m; sourceTree = "<group>"; };
-		18FECCCB1DB45B39000F6E8F /* ASIHTTPRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequest.h; sourceTree = "<group>"; };
-		18FECCCC1DB45B39000F6E8F /* ASIHTTPRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASIHTTPRequest.m; sourceTree = "<group>"; };
-		18FECCCD1DB45B39000F6E8F /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestConfig.h; sourceTree = "<group>"; };
-		18FECCCE1DB45B39000F6E8F /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestDelegate.h; sourceTree = "<group>"; };
-		18FECCCF1DB45B39000F6E8F /* ASIInputStream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASIInputStream.h; sourceTree = "<group>"; };
-		18FECCD01DB45B39000F6E8F /* ASIInputStream.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASIInputStream.m; sourceTree = "<group>"; };
-		18FECCD11DB45B39000F6E8F /* ASINetworkQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASINetworkQueue.h; sourceTree = "<group>"; };
-		18FECCD21DB45B39000F6E8F /* ASINetworkQueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASINetworkQueue.m; sourceTree = "<group>"; };
-		18FECCD31DB45B39000F6E8F /* ASIProgressDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASIProgressDelegate.h; sourceTree = "<group>"; };
-		18FECCD41DB45B39000F6E8F /* Reachability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
-		18FECCD51DB45B39000F6E8F /* Reachability.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		18FFA5141D9B93FF00258011 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18FFA5151D9B93FF00258011 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		18FFA5171D9B93FF00258011 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -214,40 +192,9 @@
 			name = login;
 			sourceTree = "<group>";
 		};
-		18FECCBF1DB45B39000F6E8F /* ASIHttpRequest */ = {
-			isa = PBXGroup;
-			children = (
-				18FECCC01DB45B39000F6E8F /* ASIAuthenticationDialog.h */,
-				18FECCC11DB45B39000F6E8F /* ASIAuthenticationDialog.m */,
-				18FECCC21DB45B39000F6E8F /* ASICacheDelegate.h */,
-				18FECCC31DB45B39000F6E8F /* ASIDataCompressor.h */,
-				18FECCC41DB45B39000F6E8F /* ASIDataCompressor.m */,
-				18FECCC51DB45B39000F6E8F /* ASIDataDecompressor.h */,
-				18FECCC61DB45B39000F6E8F /* ASIDataDecompressor.m */,
-				18FECCC71DB45B39000F6E8F /* ASIDownloadCache.h */,
-				18FECCC81DB45B39000F6E8F /* ASIDownloadCache.m */,
-				18FECCC91DB45B39000F6E8F /* ASIFormDataRequest.h */,
-				18FECCCA1DB45B39000F6E8F /* ASIFormDataRequest.m */,
-				18FECCCB1DB45B39000F6E8F /* ASIHTTPRequest.h */,
-				18FECCCC1DB45B39000F6E8F /* ASIHTTPRequest.m */,
-				18FECCCD1DB45B39000F6E8F /* ASIHTTPRequestConfig.h */,
-				18FECCCE1DB45B39000F6E8F /* ASIHTTPRequestDelegate.h */,
-				18FECCCF1DB45B39000F6E8F /* ASIInputStream.h */,
-				18FECCD01DB45B39000F6E8F /* ASIInputStream.m */,
-				18FECCD11DB45B39000F6E8F /* ASINetworkQueue.h */,
-				18FECCD21DB45B39000F6E8F /* ASINetworkQueue.m */,
-				18FECCD31DB45B39000F6E8F /* ASIProgressDelegate.h */,
-				18FECCD41DB45B39000F6E8F /* Reachability.h */,
-				18FECCD51DB45B39000F6E8F /* Reachability.m */,
-			);
-			name = ASIHttpRequest;
-			path = ../../Users/apple/Desktop/ASIHttpRequest;
-			sourceTree = "<group>";
-		};
 		18FFA5071D9B93FF00258011 = {
 			isa = PBXGroup;
 			children = (
-				18FECCBF1DB45B39000F6E8F /* ASIHttpRequest */,
 				182A562D1DB080440058F80A /* Products */,
 				18FFA5121D9B93FF00258011 /* cloudlib_ios */,
 				18FFA52C1D9B93FF00258011 /* cloudlib_iosTests */,
