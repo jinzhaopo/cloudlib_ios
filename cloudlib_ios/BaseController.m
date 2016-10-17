@@ -8,6 +8,12 @@
 
 #import "HttpHelper.h"
 #import "BaseController.h"
+@interface BaseController ()
+
+@property(nonatomic,strong) UILabel* uiLabel;
+
+
+@end
 
 @implementation BaseController
 
@@ -52,7 +58,7 @@
 -(void) netISOpen:(NSError*)  error{
     if(error != nil){
         NSLog(@"网络链接错误");
-        return;
+      
     }
 }
 
@@ -86,6 +92,32 @@
     //NSString *aaa = [_webView stringByEvaluatingJavaScriptFromString:@"document.body.innerHTML"];
     //NSLog(@"aaa:%@",aaa);
     
+}
+
+/**创建一个消息提示框 zhen 差不多放在中间***/
+-(void) createMessage:(UILabel*) uiLabel and: (NSString*) message{
+    if(uiLabel == nil){
+        uiLabel = [[UILabel alloc] init];
+    }
+    uiLabel.text = message;//设置提示消息
+    
+    uiLabel.backgroundColor = [UIColor blackColor];//设置背景颜色
+    
+    //设置frame
+    CGFloat viewW = self.view.frame.size.width;
+    CGFloat viewH = self.view.frame.size.height;
+    
+    CGFloat msgW = 200;
+    CGFloat msgH = 200;
+    CGFloat msgX = (viewW - msgW) / 2;
+    CGFloat msgY = (viewH - msgH) / 2;
+    
+    uiLabel.frame = CGRectMake(msgX, msgY, msgW, msgH);
+    
+    uiLabel.textColor = [UIColor whiteColor];
+    uiLabel.textAlignment = NSTextAlignmentCenter;
+    
+    [self.view addSubview:uiLabel];
 }
 
 @end
