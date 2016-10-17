@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-@interface BaseController : UIViewController<UIWebViewDelegate>
+@interface BaseController : UIViewController<UIWebViewDelegate,UITableViewDataSource,UITableViewDelegate,UISearchBarDelegate>
 
 /**在调用presentViewController方法的时候执行的返回操作***/
 -(void) goBack4PresentViewController;
@@ -40,4 +40,7 @@
 
 /**加载本地html***/
 -(void) loadLocationHtmlFile:(UIWebView*) webView and:(NSString*) filePath;
+
+/**创建一个消息提示框 zhen 差不多放在中间***/
+-(void) createMessage:(UILabel*) uiLabel and: (NSString*) message;
 @end
