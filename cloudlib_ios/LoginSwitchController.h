@@ -10,4 +10,11 @@
 
 @interface LoginSwitchController : BaseController
 
+//---控件---
+/**用户按钮*/
+- (IBAction)userBt:(id)sender;
+
+/**管理员按钮*/
+- (IBAction)adminBt:(id)sender;
+
 @end

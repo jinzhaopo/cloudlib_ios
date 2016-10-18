@@ -16,6 +16,7 @@
 #define D_STUDENT_TYPE @1
 #define D_APP_STORE_URL @"https://itunes.apple.com/lookup?id=XXX"
 #define D_APP_UPDATE_URL @"https://itunes.apple.com/cn/app/XXXX"
+#define D_LAUNCH_MAIN_IMG_PATH @"com.yundao.cloudlib-ios.welcome_320_480"
 
 /**教师（管理员）登入方给哥哥哥哥法的房间打开了付款了对方立刻觉得浪费了大家看***/
 #define D_HTTP_METHOD_LOGINFORTEACHER @"/ios/loginForTeacher.jhtml"

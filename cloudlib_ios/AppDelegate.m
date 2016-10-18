@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "IndexController.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 @end
@@ -35,9 +35,9 @@
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
-    IndexController *indexController=[[IndexController alloc] init];
-    NSLog(@"%@",self.window.rootViewController);
-    [self.window.rootViewController presentViewController:indexController animated:YES completion:nil];    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    ViewController *viewController=[[ViewController alloc] init];
+    self.window.rootViewController=viewController;
+    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {

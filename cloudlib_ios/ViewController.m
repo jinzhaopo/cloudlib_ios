@@ -1,31 +1,31 @@
 //
-//  LoginSwitchController.m
+//  ViewController.m
 //  cloudlib_ios
 //
-//  Created by jinzhaopo on 16-9-28.
+//  Created by apple on 16-10-18.
 //  Copyright (c) 2016年 yundao. All rights reserved.
 //
 
-#import "LoginSwitchController.h"
-#import "AdminController.h"
-#import "IndexController.h"
+#import "ViewController.h"
+#import "LoginInfoBean.h"
+#import "UserDelegate.h"
+#import "FactoryHelper.h"
 #import "UserController.h"
+#import "ComonDefine.h"
+#import "IndexController.h"
+#import "LoginSwitchController.h"
 
-@interface LoginSwitchController ()
-
-@property(nonatomic,strong) AdminController *adminController;
-@property(nonatomic,strong) UserController *userController;
+@interface ViewController()
 
 @property(nonatomic,strong) IndexController *indexController;
-
+@property(nonatomic,strong) LoginSwitchController *loginSwitchController;
 
 @end
 
-@implementation LoginSwitchController
-
+@implementation ViewController
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    [NSThread sleepForTimeInterval:1.5];
     // Do any additional setup after loading the view.
 }
 
@@ -40,7 +40,6 @@
 
 - (void)viewDidAppear:(BOOL) animated{
     [super viewDidAppear:animated];
-    /*
     //如果用户已经登录，则跳过登录页，直接前往主页
     UserDelegate *userDelegate=[FactoryHelper initFactoryHelperAndgetDBInstance:@"UserDelegate"];
     NSArray *array=[userDelegate queryAllUsers:@"User" coreSQL:@"1=1"];
@@ -50,26 +49,10 @@
         self.indexController=[[IndexController alloc]initWithNibName:@"IndexController" bundle:nil];
         [self presentViewController:self.indexController animated:YES completion:^{
         }];
-    }*/
-}
-//------控键－－－－－－－－－－
-
-//用户按钮事件
-- (IBAction)userBt:(id)sender {
-    //xib 跳转
-    self.userController=[[UserController alloc]initWithNibName:@"UserController" bundle:nil];
-    [self presentViewController:self.userController animated:YES completion:^{
-        
-    }];
-}
-//管理员事件
-- (IBAction)adminBt:(id)sender {
-    //xib跳转
-    self.adminController=[[AdminController alloc]initWithNibName:@"AdminController" bundle:nil];
-    [self presentViewController:self.adminController animated:YES completion:^{
-        
-    }];
+    }else{
+        //否则前往用户选择页
+         self.loginSwitchController=[[LoginSwitchController alloc]initWithNibName:@"LoginSwitchController" bundle:nil];
+        [self presentViewController:self.loginSwitchController animated:YES completion:nil];
+    }
 }
 @end
-
-
