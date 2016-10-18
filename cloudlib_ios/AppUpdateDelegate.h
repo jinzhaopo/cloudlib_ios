@@ -8,4 +8,9 @@
 
 #import <UIKit/UIKit.h>
 @interface AppUpdateDelegate:NSObject <UIAlertViewDelegate>
+
+- (UIAlertView *)alertUpdateApp;
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex;
+
 @end

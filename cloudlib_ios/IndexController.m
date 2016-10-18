@@ -21,6 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self loadLocationHtmlFile:self.webView and:@"/index.html"];
+    [self updateAppVersion];
 }
 
 - (void)didReceiveMemoryWarning {

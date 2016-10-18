@@ -8,6 +8,7 @@
 
 #import "HttpHelper.h"
 #import "BaseController.h"
+#import "AppUpdateDelegate.h"
 @interface BaseController ()
 
 @property(nonatomic,strong) UILabel* uiLabel;
@@ -120,4 +121,10 @@
     [self.view addSubview:uiLabel];
 }
 
+//更新app系统版本号
+- (void) updateAppVersion{
+    AppUpdateDelegate *aud=[[AppUpdateDelegate alloc] init];
+    UIAlertView *alert=[aud alertUpdateApp];
+    [aud alertView:alert clickedButtonAtIndex:alert.cancelButtonIndex];
+}
 @end

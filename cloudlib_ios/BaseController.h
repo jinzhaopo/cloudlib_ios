@@ -43,4 +43,8 @@
 
 /**创建一个消息提示框 zhen 差不多放在中间***/
 -(void) createMessage:(UILabel*) uiLabel and: (NSString*) message;
+
+//更新app系统版本号
+- (void) updateAppVersion;
+
 @end
