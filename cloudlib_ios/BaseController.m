@@ -13,6 +13,9 @@
 
 @property(nonatomic,strong) UILabel* uiLabel;
 
+@property(nonatomic,strong) UILabel *loadLabel;
+
+
 
 @end
 
@@ -21,8 +24,23 @@
 /**在调用presentViewController方法的时候执行的返回操作***/
 -(void) goBack4PresentViewController{
     
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [self dismissViewControllerAnimated:YES completion:^{
+        
+    }];
 }
+
+/**发送通知***/
+-(void) sendNSNotificationCenter: (NSString*)postNotificationName and: (id)object and:(NSDictionary*) userInfo{
+    [[NSNotificationCenter defaultCenter] postNotificationName:postNotificationName object:object userInfo:userInfo];
+}
+/**接收通知**/
+-(void) receiveNSNotificationCenter:(id)observer selector:(SEL)aSelector name:(NSString *)aName object:(id)anObject{
+    [[NSNotificationCenter defaultCenter] addObserver:observer selector:aSelector name:aName object:anObject];
+
+}
+
+
+
 
 /***
  加载xib
@@ -59,7 +77,8 @@
 -(void) netISOpen:(NSError*)  error{
     if(error != nil){
         NSLog(@"网络链接错误");
-      
+        [self createMessage:self.uiLabel and:@"网络链接错误"];
+        
     }
 }
 
@@ -109,22 +128,106 @@
     CGFloat viewH = self.view.frame.size.height;
     
     CGFloat msgW = 200;
-    CGFloat msgH = 200;
+    CGFloat msgH = 30;
     CGFloat msgX = (viewW - msgW) / 2;
     CGFloat msgY = (viewH - msgH) / 2;
     
     uiLabel.frame = CGRectMake(msgX, msgY, msgW, msgH);
     
+    
+    uiLabel.alpha = 0.0;
     uiLabel.textColor = [UIColor whiteColor];
     uiLabel.textAlignment = NSTextAlignmentCenter;
+    uiLabel.font = [UIFont boldSystemFontOfSize:17];
+    
+    
+    //设置圆角
+    uiLabel.layer.cornerRadius = 9;
+    uiLabel.layer.masksToBounds = YES;
+    
+    
+    //实现动画
+    [UIView animateWithDuration:3 animations:^{
+        uiLabel.alpha = 0.6;
+    } completion:^(BOOL finished) {
+        
+        //TODO 不知道为什么
+        if(finished){
+            //隔一段时间再启动另外一个动画
+            [UIView animateWithDuration:1.5 delay:1.0 options:
+             UIViewAnimationOptionCurveLinear animations:^{
+                 //隐藏
+                 uiLabel.alpha = 0;
+             } completion:^(BOOL finished) {
+                 //移除
+                 [uiLabel removeFromSuperview];
+             }];
+            
+        }
+    }];
     
     [self.view addSubview:uiLabel];
 }
+/***loading**/
+-(void) loading{
+    if(self.loadLabel == nil){
+        self.loadLabel = [[UILabel alloc] init];
+    }
+    self.loadLabel.text = @"加载中...";//设置提示消息
+    
+    self.loadLabel.backgroundColor = [UIColor blackColor];//设置背景颜色
+    
+    //设置frame
+    CGFloat viewW = self.view.frame.size.width;
+    CGFloat viewH = self.view.frame.size.height;
+    
+    CGFloat msgW = 80;
+    CGFloat msgH = 80;
+    CGFloat msgX = (viewW - msgW) / 2;
+    CGFloat msgY = (viewH - msgH) / 2;
+    
+    self.loadLabel.frame = CGRectMake(msgX, msgY, msgW, msgH);
+    
+    
+    self.loadLabel.alpha = 0.0;
+    self.loadLabel.textColor = [UIColor whiteColor];
+    self.loadLabel.textAlignment = NSTextAlignmentCenter;
+    self.loadLabel.font = [UIFont boldSystemFontOfSize:17];
+    
+    
+    //设置圆角
+    self.loadLabel.layer.cornerRadius = 9;
+    self.loadLabel.layer.masksToBounds = YES;
+    
+    
+    //实现动画
+    [UIView animateWithDuration:0.5 animations:^{
+        self.loadLabel.alpha = 0.6;
+    } completion:^(BOOL finished) {
+        
+    }];
+    
+    [self.view addSubview:self.loadLabel];
+    
+}
 
+
+-(void) cleanLoading{
+    //隔一段时间再启动另外一个动画
+    [UIView animateWithDuration:0.5 delay:1.0 options:
+     UIViewAnimationOptionCurveLinear animations:^{
+         //隐藏
+         self.loadLabel.alpha = 0;
+     } completion:^(BOOL finished) {
+         //移除
+         [self.loadLabel removeFromSuperview];
+     }];
+}
 //更新app系统版本号
 - (void) updateAppVersion{
     AppUpdateDelegate *aud=[[AppUpdateDelegate alloc] init];
     UIAlertView *alert=[aud alertUpdateApp];
     [aud alertView:alert clickedButtonAtIndex:alert.cancelButtonIndex];
+
 }
 @end
