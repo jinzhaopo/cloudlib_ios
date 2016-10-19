@@ -6,7 +6,14 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserController">
             <connections>
+                <outlet property="gaiView" destination="1bA-ak-uGi" id="jED-FR-eqL"/>
+                <outlet property="leftLabelView" destination="TCR-ns-eox" id="4qH-pT-bWO"/>
+                <outlet property="loginView" destination="QWK-GQ-IlP" id="jie-M3-ooV"/>
+                <outlet property="messageLabelView" destination="NsG-y2-ynw" id="eLN-UD-Dsk"/>
+                <outlet property="passwordView" destination="Uix-3H-4g5" id="bTU-wZ-9Az"/>
+                <outlet property="rightLabelView" destination="C0Q-vc-opx" id="DHC-AL-CaW"/>
                 <outlet property="schoolView" destination="551-UJ-G7c" id="gBh-9m-zP5"/>
+                <outlet property="userNameView" destination="VVk-XG-2aB" id="Iwv-rU-EjN"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -15,14 +22,6 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入密码" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Uix-3H-4g5">
-                    <rect key="frame" x="48" y="250" width="279" height="30"/>
-                    <accessibility key="accessibilityConfiguration">
-                        <accessibilityTraits key="traits" none="YES" searchField="YES"/>
-                    </accessibility>
-                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                </textField>
                 <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="1bA-ak-uGi">
                     <rect key="frame" x="130" y="545" width="20" height="20"/>
                 </activityIndicatorView>
@@ -52,6 +51,9 @@
                     <rect key="frame" x="48" y="187" width="279" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <action selector="userNameChange:" destination="-1" eventType="editingChanged" id="hIY-oW-QTU"/>
+                    </connections>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QWK-GQ-IlP">
                     <rect key="frame" x="124" y="342" width="126" height="30"/>
@@ -59,6 +61,9 @@
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="loginAction:" destination="-1" eventType="touchUpInside" id="Syz-GV-h11"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ox7-iB-KdU">
                     <rect key="frame" x="0.0" y="19" width="64" height="22"/>
@@ -77,6 +82,9 @@
                     <rect key="frame" x="48" y="129" width="279" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <action selector="schoolChange:" destination="-1" eventType="editingChanged" id="Zxc-XV-qMw"/>
+                    </connections>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YVk-tS-Wwz">
                     <rect key="frame" x="48" y="129" width="275" height="30"/>
@@ -87,6 +95,17 @@
                         <action selector="schoolBtView:" destination="-1" eventType="touchUpInside" id="HF3-mh-6Xq"/>
                     </connections>
                 </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入密码" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Uix-3H-4g5">
+                    <rect key="frame" x="48" y="250" width="279" height="30"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <accessibilityTraits key="traits" none="YES" searchField="YES"/>
+                    </accessibility>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                    <connections>
+                        <action selector="passwordChange:" destination="-1" eventType="editingChanged" id="FHd-sf-bro"/>
+                    </connections>
+                </textField>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>

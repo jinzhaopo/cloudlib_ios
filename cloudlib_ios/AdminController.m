@@ -124,6 +124,7 @@
     self.messageLabelView.hidden = true;
 }
 
+
 //----------组件----------
 
 - (IBAction)goBack {
@@ -196,26 +197,7 @@
     
 }
 
-/***重写方法***/
-/**
- *被网络调用的方法  每个继承的controller必须重写这个方法
- *
- **/
--(void) httpAction:(int) what and: (NSData *)  data and: (NSURLResponse * )  response and: (NSError *)  error{
-    
-    //先要判断网络是否链接
-    [self netISOpen:error];
-    NSString *dataString=[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-    switch (what) {
-        case 1:
-            
-            break;
-            
-        default:
-            break;
-    }
-    
-}
+
 
 
 @end

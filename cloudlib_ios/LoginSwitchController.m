@@ -40,17 +40,7 @@
 
 - (void)viewDidAppear:(BOOL) animated{
     [super viewDidAppear:animated];
-    /*
-    //如果用户已经登录，则跳过登录页，直接前往主页
-    UserDelegate *userDelegate=[FactoryHelper initFactoryHelperAndgetDBInstance:@"UserDelegate"];
-    NSArray *array=[userDelegate queryAllUsers:@"User" coreSQL:@"1=1"];
-    if([array count]){
-        User *user=array[0];
-        [LoginInfoBean setLoginInfoProperties:user.userId barcode:user.barcode userName:user.userName password:user.password schoolId:user.schoolId type:user.type loginJudge:user.loginJudge schoolName:user.message];
-        self.indexController=[[IndexController alloc]initWithNibName:@"IndexController" bundle:nil];
-        [self presentViewController:self.indexController animated:YES completion:^{
-        }];
-    }*/
+ 
 }
 //------控键－－－－－－－－－－
 
