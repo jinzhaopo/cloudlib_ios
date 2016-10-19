@@ -15,6 +15,9 @@
 #import "UserBean.h"
 #import "JsonUtil.h"
 #import "IndexController.h"
+#import "UserDelegate.h"
+#import "FactoryHelper.h"
+#import "LoginInfoBean.h"
 
 @interface UserController ()
 @property(nonatomic,strong) SwitchSchoolController *switchSchoolController;
@@ -191,7 +194,7 @@
     if(synchronousHttpData.error != nil){
         // 先关闭提示
         [self closeLoginMessage];
-
+        
         [self netISOpen:synchronousHttpData.error];
         
         return;
@@ -213,11 +216,11 @@
         NSLog(@"%@",userBean);
         
         //如果正确就进行跳转
-        //        UserDelegate *userDelegate=[FactoryHelper initFactoryHelperAndgetDBInstance:@"UserDelegate"];
-        //        [userDelegate clearUsers:@"User"];
-        //
-        //        [userDelegate saveUser:userBean.userId userName:userBean.userName barcode:userBean.barcode password:userBean.password schoolId:userBean.schoolId type:userBean.type loginJudge:userBean.loginJudge message:userBean.message teacherId:userBean.teacherId];
-        //        [LoginInfoBean setLoginInfo:dict];
+        UserDelegate *userDelegate=[FactoryHelper initFactoryHelperAndgetDBInstance:@"UserDelegate"];
+        [userDelegate clearUsers:@"User"];
+        
+        [userDelegate saveUser:userBean.userId userName:userBean.userName barcode:userBean.barcode password:userBean.password schoolId:userBean.schoolId type:userBean.type loginJudge:userBean.loginJudge message:userBean.message teacherId:userBean.teacherId];
+        [LoginInfoBean setLoginInfo:dict];
         
         //xib跳转
         self.indexController=[[IndexController alloc]initWithNibName:@"IndexController" bundle:nil];
