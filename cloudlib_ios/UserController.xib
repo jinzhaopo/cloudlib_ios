@@ -70,6 +70,9 @@
                     <state key="normal" title=" 返回" image="左箭头">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="backAction:" destination="-1" eventType="touchUpInside" id="aDb-JJ-2cv"/>
+                    </connections>
                 </button>
                 <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TCR-ns-eox">
                     <rect key="frame" x="0.0" y="540" width="163" height="30"/>

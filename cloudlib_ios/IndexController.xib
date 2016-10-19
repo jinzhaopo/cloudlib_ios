@@ -19,19 +19,10 @@
                     <rect key="frame" x="0.0" y="47" width="375" height="574"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </webView>
-                <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lvJ-lQ-ZsD">
-                    <rect key="frame" x="0.0" y="618" width="375" height="49"/>
-                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    <items>
-                        <tabBarItem title="主页" image="主页" id="CNJ-1E-t80"/>
-                        <tabBarItem title="扫一扫" image="scan" id="v4p-L8-V5c"/>
-                        <tabBarItem title="我的云图" image="cloud" id="KgZ-Yr-cPV"/>
-                    </items>
-                    <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                </tabBar>
                 <navigationBar contentMode="scaleToFill" fixedFrame="YES" backIndicatorImage="设置背景" translatesAutoresizingMaskIntoConstraints="NO" id="4O3-m2-maS">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="barTintColor" red="0.09146108805" green="0.52893435389999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <items>
                         <navigationItem title="云图书馆" id="0U1-dd-TNW">
                             <barButtonItem key="leftBarButtonItem" image="people" id="AiP-Gz-HfU">
@@ -41,6 +32,16 @@
                         </navigationItem>
                     </items>
                 </navigationBar>
+                <tabBar opaque="NO" contentMode="scaleToFill" fixedFrame="YES" backgroundImage="设置背景" translatesAutoresizingMaskIntoConstraints="NO" id="lvJ-lQ-ZsD">
+                    <rect key="frame" x="0.0" y="618" width="375" height="49"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <items>
+                        <tabBarItem title="主页" image="主页" id="CNJ-1E-t80"/>
+                        <tabBarItem title="扫一扫" image="scan" id="v4p-L8-V5c"/>
+                        <tabBarItem title="我的云图" image="cloud" id="KgZ-Yr-cPV"/>
+                    </items>
+                    <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tabBar>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>

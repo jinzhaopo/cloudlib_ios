@@ -41,6 +41,9 @@
 - (IBAction)passwordChange:(id)sender;
 /***登入**/
 - (IBAction)loginAction:(id)sender;
+/**返回**/
+- (IBAction)backAction:(id)sender;
+
 
 /***view****/
 /***选择学校view***/
@@ -231,5 +234,8 @@
         
     }
     
+}
+- (IBAction)backAction:(id)sender {
+    [self goBack4PresentViewController];
 }
 @end
