@@ -169,7 +169,7 @@
 			name = CoreData;
 			sourceTree = "<group>";
 		};
-		1878231C1D9B9AA90025BC3E /* welcom_320_480.png */ = {
+		1878231C1D9B9AA90025BC3E /* util */ = {
 			isa = PBXGroup;
 			children = (
 				1878231D1D9B9AB40025BC3E /* StringHelper.h */,
@@ -179,7 +179,7 @@
 				18509C171DAE10710021EB83 /* JsonUtil.h */,
 				18509C181DAE10970021EB83 /* JsonUtil.m */,
 			);
-			name = welcom_320_480.png;
+			name = util;
 			sourceTree = "<group>";
 		};
 		18B38DD81D9BA1E300EF2885 /* login */ = {
@@ -217,7 +217,7 @@
 			children = (
 				188FA9A11DAF715F0076FC5B /* html */,
 				18509C1A1DAE18860021EB83 /* bean */,
-				1878231C1D9B9AA90025BC3E /* welcom_320_480.png */,
+				1878231C1D9B9AA90025BC3E /* util */,
 				187823171D9B997F0025BC3E /* CoreData */,
 				18FFA5541D9B972600258011 /* model */,
 				18FFA5531D9B971600258011 /* controller */,
