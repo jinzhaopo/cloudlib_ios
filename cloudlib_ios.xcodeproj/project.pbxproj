@@ -20,6 +20,8 @@
 		1856BAFB1D9CEA99004D8851 /* AdminController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1856BAF91D9CEA99004D8851 /* AdminController.m */; };
 		1856BAFC1D9CEA99004D8851 /* AdminController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1856BAFA1D9CEA99004D8851 /* AdminController.xib */; };
 		18617E6D1DB7477200F44D9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18FFA51D1D9B93FF00258011 /* Main.storyboard */; };
+		18617EB31DB7615100F44D9B /* SettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18617EB11DB7615100F44D9B /* SettingController.m */; };
+		18617EB41DB7615100F44D9B /* SettingController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18617EB21DB7615100F44D9B /* SettingController.xib */; };
 		1878231F1D9B9AB40025BC3E /* StringHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1878231E1D9B9AB40025BC3E /* StringHelper.m */; };
 		187823221D9B9AC90025BC3E /* BaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187823211D9B9AC90025BC3E /* BaseController.m */; };
 		18840EA51DB5F1340014E756 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18840EA41DB5F1340014E756 /* ViewController.m */; };
@@ -72,6 +74,9 @@
 		1856BAF81D9CEA99004D8851 /* AdminController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdminController.h; sourceTree = "<group>"; };
 		1856BAF91D9CEA99004D8851 /* AdminController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdminController.m; sourceTree = "<group>"; };
 		1856BAFA1D9CEA99004D8851 /* AdminController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdminController.xib; sourceTree = "<group>"; };
+		18617EB01DB7615100F44D9B /* SettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingController.h; sourceTree = "<group>"; };
+		18617EB11DB7615100F44D9B /* SettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingController.m; sourceTree = "<group>"; };
+		18617EB21DB7615100F44D9B /* SettingController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingController.xib; sourceTree = "<group>"; };
 		1878231D1D9B9AB40025BC3E /* StringHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringHelper.h; sourceTree = "<group>"; };
 		1878231E1D9B9AB40025BC3E /* StringHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringHelper.m; sourceTree = "<group>"; };
 		187823201D9B9AC90025BC3E /* BaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseController.h; sourceTree = "<group>"; };
@@ -164,6 +169,9 @@
 		18617E6C1DB73DB600F44D9B /* setting */ = {
 			isa = PBXGroup;
 			children = (
+				18617EB01DB7615100F44D9B /* SettingController.h */,
+				18617EB11DB7615100F44D9B /* SettingController.m */,
+				18617EB21DB7615100F44D9B /* SettingController.xib */,
 			);
 			name = setting;
 			sourceTree = "<group>";
@@ -430,6 +438,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18617EB41DB7615100F44D9B /* SettingController.xib in Resources */,
 				182A56271DB069690058F80A /* UserController.xib in Resources */,
 				182A562C1DB077B20058F80A /* SwitchSchoolController.xib in Resources */,
 				18F802391DA9EEB100ABE3F5 /* IndexController.xib in Resources */,
@@ -458,6 +467,7 @@
 			files = (
 				185647541DAE20F90074EFBA /* LoginInfoBean.h in Sources */,
 				18FFA5501D9B96D000258011 /* UserDelegate.m in Sources */,
+				18617EB31DB7615100F44D9B /* SettingController.m in Sources */,
 				1856BAFB1D9CEA99004D8851 /* AdminController.m in Sources */,
 				18509C191DAE10970021EB83 /* JsonUtil.m in Sources */,
 				18FFA54C1D9B968100258011 /* HttpHelper.m in Sources */,

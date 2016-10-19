@@ -8,10 +8,16 @@
 
 #import "IndexController.h"
 #import "LoginInfoBean.h"
+#import "SettingController.h"
 
 @interface IndexController ()
 
-/*****/
+@property(nonatomic,strong) SettingController* settingController;
+
+/**action***/
+- (IBAction)settingAction:(id)sender;
+
+/***view**/
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 
 @end
@@ -30,4 +36,11 @@
 }
 
 
+- (IBAction)settingAction:(id)sender {
+    //xib 跳转
+    self.settingController=[[SettingController alloc]initWithNibName:@"SettingController" bundle:nil];
+    [self presentViewController:self.settingController animated:YES completion:^{
+        
+    }];
+}
 @end
