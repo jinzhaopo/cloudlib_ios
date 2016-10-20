@@ -19,6 +19,9 @@
 		185647561DAE21380074EFBA /* LoginInfoBean.m in Sources */ = {isa = PBXBuildFile; fileRef = 185647551DAE21380074EFBA /* LoginInfoBean.m */; };
 		1856BAFB1D9CEA99004D8851 /* AdminController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1856BAF91D9CEA99004D8851 /* AdminController.m */; };
 		1856BAFC1D9CEA99004D8851 /* AdminController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1856BAFA1D9CEA99004D8851 /* AdminController.xib */; };
+		18617E6D1DB7477200F44D9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18FFA51D1D9B93FF00258011 /* Main.storyboard */; };
+		18617EB31DB7615100F44D9B /* SettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18617EB11DB7615100F44D9B /* SettingController.m */; };
+		18617EB41DB7615100F44D9B /* SettingController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18617EB21DB7615100F44D9B /* SettingController.xib */; };
 		1878231F1D9B9AB40025BC3E /* StringHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1878231E1D9B9AB40025BC3E /* StringHelper.m */; };
 		187823221D9B9AC90025BC3E /* BaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187823211D9B9AC90025BC3E /* BaseController.m */; };
 		18840EA51DB5F1340014E756 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18840EA41DB5F1340014E756 /* ViewController.m */; };
@@ -33,7 +36,6 @@
 		18FECCFB1DB4771E000F6E8F /* AppUpdateDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FECCFA1DB4771E000F6E8F /* AppUpdateDelegate.m */; };
 		18FFA5161D9B93FF00258011 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FFA5151D9B93FF00258011 /* main.m */; };
 		18FFA5191D9B93FF00258011 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FFA5181D9B93FF00258011 /* AppDelegate.m */; };
-		18FFA51F1D9B93FF00258011 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18FFA51D1D9B93FF00258011 /* Main.storyboard */; };
 		18FFA5211D9B93FF00258011 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18FFA5201D9B93FF00258011 /* Images.xcassets */; };
 		18FFA5241D9B93FF00258011 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18FFA5221D9B93FF00258011 /* LaunchScreen.xib */; };
 		18FFA5301D9B93FF00258011 /* cloudlib_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FFA52F1D9B93FF00258011 /* cloudlib_iosTests.m */; };
@@ -72,6 +74,9 @@
 		1856BAF81D9CEA99004D8851 /* AdminController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdminController.h; sourceTree = "<group>"; };
 		1856BAF91D9CEA99004D8851 /* AdminController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdminController.m; sourceTree = "<group>"; };
 		1856BAFA1D9CEA99004D8851 /* AdminController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdminController.xib; sourceTree = "<group>"; };
+		18617EB01DB7615100F44D9B /* SettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingController.h; sourceTree = "<group>"; };
+		18617EB11DB7615100F44D9B /* SettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingController.m; sourceTree = "<group>"; };
+		18617EB21DB7615100F44D9B /* SettingController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingController.xib; sourceTree = "<group>"; };
 		1878231D1D9B9AB40025BC3E /* StringHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringHelper.h; sourceTree = "<group>"; };
 		1878231E1D9B9AB40025BC3E /* StringHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringHelper.m; sourceTree = "<group>"; };
 		187823201D9B9AC90025BC3E /* BaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseController.h; sourceTree = "<group>"; };
@@ -159,6 +164,16 @@
 				18F802381DA9EEB100ABE3F5 /* IndexController.xib */,
 			);
 			name = index;
+			sourceTree = "<group>";
+		};
+		18617E6C1DB73DB600F44D9B /* setting */ = {
+			isa = PBXGroup;
+			children = (
+				18617EB01DB7615100F44D9B /* SettingController.h */,
+				18617EB11DB7615100F44D9B /* SettingController.m */,
+				18617EB21DB7615100F44D9B /* SettingController.xib */,
+			);
+			name = setting;
 			sourceTree = "<group>";
 		};
 		187823171D9B997F0025BC3E /* CoreData */ = {
@@ -323,6 +338,7 @@
 		18FFA5531D9B971600258011 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				18617E6C1DB73DB600F44D9B /* setting */,
 				1856BAF21D9CE7EA004D8851 /* index */,
 				18B38DD81D9BA1E300EF2885 /* login */,
 				187823201D9B9AC90025BC3E /* BaseController.h */,
@@ -422,13 +438,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18617EB41DB7615100F44D9B /* SettingController.xib in Resources */,
 				182A56271DB069690058F80A /* UserController.xib in Resources */,
 				182A562C1DB077B20058F80A /* SwitchSchoolController.xib in Resources */,
 				18F802391DA9EEB100ABE3F5 /* IndexController.xib in Resources */,
 				188FA9A21DAF715F0076FC5B /* html in Resources */,
-				18FFA51F1D9B93FF00258011 /* Main.storyboard in Resources */,
 				1856BAFC1D9CEA99004D8851 /* AdminController.xib in Resources */,
 				18FFA5241D9B93FF00258011 /* LaunchScreen.xib in Resources */,
+				18617E6D1DB7477200F44D9B /* Main.storyboard in Resources */,
 				18FFA5211D9B93FF00258011 /* Images.xcassets in Resources */,
 				183EDB151DB5C579005EC902 /* LoginSwitchController.xib in Resources */,
 			);
@@ -450,6 +467,7 @@
 			files = (
 				185647541DAE20F90074EFBA /* LoginInfoBean.h in Sources */,
 				18FFA5501D9B96D000258011 /* UserDelegate.m in Sources */,
+				18617EB31DB7615100F44D9B /* SettingController.m in Sources */,
 				1856BAFB1D9CEA99004D8851 /* AdminController.m in Sources */,
 				18509C191DAE10970021EB83 /* JsonUtil.m in Sources */,
 				18FFA54C1D9B968100258011 /* HttpHelper.m in Sources */,

@@ -23,9 +23,11 @@
 @end
 
 @implementation ViewController
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     [NSThread sleepForTimeInterval:1.5];
+    
     // Do any additional setup after loading the view.
 }
 
