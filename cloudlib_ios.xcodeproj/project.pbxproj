@@ -24,6 +24,9 @@
 		18617EB41DB7615100F44D9B /* SettingController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18617EB21DB7615100F44D9B /* SettingController.xib */; };
 		1878231F1D9B9AB40025BC3E /* StringHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1878231E1D9B9AB40025BC3E /* StringHelper.m */; };
 		187823221D9B9AC90025BC3E /* BaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187823211D9B9AC90025BC3E /* BaseController.m */; };
+		187ECE0E1DB85CF5004A29B9 /* sortednames.plist in Resources */ = {isa = PBXBuildFile; fileRef = 187ECE0D1DB85CF5004A29B9 /* sortednames.plist */; };
+		187ECE121DB86642004A29B9 /* UserInfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187ECE101DB86642004A29B9 /* UserInfoController.m */; };
+		187ECE131DB86642004A29B9 /* UserInfoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 187ECE111DB86642004A29B9 /* UserInfoController.xib */; };
 		18840EA51DB5F1340014E756 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18840EA41DB5F1340014E756 /* ViewController.m */; };
 		188FA9A21DAF715F0076FC5B /* html in Resources */ = {isa = PBXBuildFile; fileRef = 188FA9A11DAF715F0076FC5B /* html */; };
 		18B38DDB1D9BA25200EF2885 /* LoginSwitchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B38DDA1D9BA25200EF2885 /* LoginSwitchController.m */; };
@@ -81,6 +84,10 @@
 		1878231E1D9B9AB40025BC3E /* StringHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringHelper.m; sourceTree = "<group>"; };
 		187823201D9B9AC90025BC3E /* BaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseController.h; sourceTree = "<group>"; };
 		187823211D9B9AC90025BC3E /* BaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseController.m; sourceTree = "<group>"; };
+		187ECE0D1DB85CF5004A29B9 /* sortednames.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sortednames.plist; sourceTree = "<group>"; };
+		187ECE0F1DB86642004A29B9 /* UserInfoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoController.h; sourceTree = "<group>"; };
+		187ECE101DB86642004A29B9 /* UserInfoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoController.m; sourceTree = "<group>"; };
+		187ECE111DB86642004A29B9 /* UserInfoController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserInfoController.xib; sourceTree = "<group>"; };
 		18840EA41DB5F1340014E756 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		18840EA61DB5F1460014E756 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		188FA9A11DAF715F0076FC5B /* html */ = {isa = PBXFileReference; lastKnownFileType = folder; path = html; sourceTree = "<group>"; };
@@ -172,6 +179,9 @@
 				18617EB01DB7615100F44D9B /* SettingController.h */,
 				18617EB11DB7615100F44D9B /* SettingController.m */,
 				18617EB21DB7615100F44D9B /* SettingController.xib */,
+				187ECE0F1DB86642004A29B9 /* UserInfoController.h */,
+				187ECE101DB86642004A29B9 /* UserInfoController.m */,
+				187ECE111DB86642004A29B9 /* UserInfoController.xib */,
 			);
 			name = setting;
 			sourceTree = "<group>";
@@ -250,6 +260,7 @@
 		18FFA5131D9B93FF00258011 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				187ECE0D1DB85CF5004A29B9 /* sortednames.plist */,
 				18FFA5201D9B93FF00258011 /* Images.xcassets */,
 				18FFA5141D9B93FF00258011 /* Info.plist */,
 				18FFA5151D9B93FF00258011 /* main.m */,
@@ -444,9 +455,11 @@
 				18F802391DA9EEB100ABE3F5 /* IndexController.xib in Resources */,
 				188FA9A21DAF715F0076FC5B /* html in Resources */,
 				1856BAFC1D9CEA99004D8851 /* AdminController.xib in Resources */,
+				187ECE0E1DB85CF5004A29B9 /* sortednames.plist in Resources */,
 				18FFA5241D9B93FF00258011 /* LaunchScreen.xib in Resources */,
 				18617E6D1DB7477200F44D9B /* Main.storyboard in Resources */,
 				18FFA5211D9B93FF00258011 /* Images.xcassets in Resources */,
+				187ECE131DB86642004A29B9 /* UserInfoController.xib in Resources */,
 				183EDB151DB5C579005EC902 /* LoginSwitchController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -485,6 +498,7 @@
 				182A56261DB069690058F80A /* UserController.m in Sources */,
 				1878231F1D9B9AB40025BC3E /* StringHelper.m in Sources */,
 				18840EA51DB5F1340014E756 /* ViewController.m in Sources */,
+				187ECE121DB86642004A29B9 /* UserInfoController.m in Sources */,
 				182A562B1DB077B20058F80A /* SwitchSchoolController.m in Sources */,
 				18FFA5451D9B95FE00258011 /* DBHelper.m in Sources */,
 				18509C1E1DAE1A3C0021EB83 /* UserBean.m in Sources */,

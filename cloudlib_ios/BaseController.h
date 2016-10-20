@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-@interface BaseController : UIViewController<UIWebViewDelegate,UITableViewDataSource,UITableViewDelegate,UISearchBarDelegate>
+@interface BaseController : UIViewController<UIWebViewDelegate,UITableViewDataSource,UITableViewDelegate,UISearchBarDelegate,
+UIAlertViewDelegate>
 
 
 /**在调用presentViewController方法的时候执行的返回操作***/

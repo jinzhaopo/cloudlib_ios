@@ -15,10 +15,6 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JVP-V8-yJr">
-                    <rect key="frame" x="0.0" y="47" width="375" height="574"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                </webView>
                 <navigationBar contentMode="scaleToFill" fixedFrame="YES" backIndicatorImage="设置背景" translatesAutoresizingMaskIntoConstraints="NO" id="4O3-m2-maS">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -48,6 +44,10 @@
                     <color key="barTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <color key="selectedImageTintColor" red="0.09146108805" green="0.52893435389999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                 </tabBar>
+                <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JVP-V8-yJr">
+                    <rect key="frame" x="0.0" y="44" width="375" height="574"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </webView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
