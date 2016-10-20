@@ -44,7 +44,7 @@
                         <tabBarItem title="扫一扫" image="scan" id="v4p-L8-V5c"/>
                         <tabBarItem title="我的云图" image="cloud" id="KgZ-Yr-cPV"/>
                     </items>
-                    <color key="barTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="barTintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                     <color key="selectedImageTintColor" red="0.09146108805" green="0.52893435389999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                 </tabBar>
                 <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JVP-V8-yJr">

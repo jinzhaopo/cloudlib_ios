@@ -77,6 +77,12 @@ $(document).ready(function(){
   function send(message){
       alert(message);
   }
+function btnClick()
+{
+    bdgt("hello world");
+
+}
+
 </script>
 </head>
 <body class="keBody">
@@ -84,9 +90,9 @@ $(document).ready(function(){
 <!--效果html开始-->
 <div class="main_visual">
 	<div class="flicking_con">
-		<a href="#">1</a>
-		<a href="#">2</a>
-		<a href="#">3</a>			
+		<a href="btnClick();">1</a>
+		<a href="btnClick();">2</a>
+		<a href="btnClick();">3</a>			
 	</div>
 	<div class="main_image">
 		<ul>
@@ -137,7 +143,7 @@ $(document).ready(function(){
 </div>		
 		<div class="sech"> 			
 				 <ul  class="list_2">
-					<li class="li2_1"><img src="images/index/title.png" />&nbsp;<strong>题名</strong></li>
+					<li class="li2_1" onclick="btnClick();"><img src="images/index/title.png" />&nbsp;<strong>题名</strong></li>
 					<li class="li2_2"><img src="images/index/bookname.png" />&nbsp;<strong>书名</strong></li>	
 					<li class="li2_3"><img src="images/index/serach.png" />&nbsp;<strong>精确检索</strong></li>	
 				</ul>

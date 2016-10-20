@@ -51,9 +51,9 @@
     //    indexPath.row; // 第几行
     // 1.创建cell
     
-    static NSString *PersidentsCellIdentifier = @"PersidentsCellIdentifier";
+    
     //= [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:nil];
-      UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:PersidentsCellIdentifier] ;
+      UITableViewCell *cell  = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"cell"] ;
   
     
     // 2.设置数据

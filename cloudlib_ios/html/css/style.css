@@ -26,7 +26,7 @@ a:hover { color: #D40000; text-decoration: none}
 .keUrl:hover{ text-decoration: underline; color: #FFF; }
 .mKeBanner,.mKeBanner div{text-align:center;}
 /*科e互联特效基本框架CSS结束，应用特效时，以上样式可删除*/
-.main_visual{height:220px;border-top:1px solid #d7d7d7;overflow:hidden;position:relative; padding-top:30px;}
+.main_visual{height:220px;border-top:1px solid #d7d7d7;overflow:hidden;position:relative;}
 .main_image{height:220px;overflow:hidden;position:relative;}
 .main_image ul{width:9999px;height:220px;overflow:hidden;position:absolute;top:0;left:0}
 .main_image li{float:left;width:100%;height:220px;}

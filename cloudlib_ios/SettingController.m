@@ -9,6 +9,7 @@
 #import "SettingController.h"
 #import "AppDelegate.h"
 #import "UserInfoController.h"
+#import "LoginSwitchController.h"
 @interface SettingController ()
 
 
@@ -129,7 +130,7 @@
     long section =indexPath.section;
     if (section == 1 && row == 1) {
         //退出
-        UIAlertView * alert = [[UIAlertView alloc]initWithTitle:@"nil" message:@"确定要退出?" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
+        UIAlertView * alert = [[UIAlertView alloc]initWithTitle:nil message:@"确定要退出?" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
         
         [alert show];
     }else if(section==0 && row == 0){
@@ -146,6 +147,14 @@
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
     if(buttonIndex == 1){
         //执行退出的代码
+        //先将数据中的删除 TODO
+        
+        //定位到loginSwitch
+        LoginSwitchController *lsc = [[LoginSwitchController alloc]init];
+        [self presentViewController:lsc animated:YES completion:^{
+            
+        }];
+        
     }
 }
 

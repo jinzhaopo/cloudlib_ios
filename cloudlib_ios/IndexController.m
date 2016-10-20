@@ -9,6 +9,7 @@
 #import "IndexController.h"
 #import "LoginInfoBean.h"
 #import "SettingController.h"
+#import <JavaScriptCore/JavaScriptCore.h>
 
 @interface IndexController ()
 
@@ -30,6 +31,20 @@
     [super viewDidLoad];
     [self loadLocationHtmlFile:self.webView and:@"/index.html"];
     [self updateAppVersion];
+    
+    JSContext *content = [self.webView valueForKeyPath:@"documentView.webView.mainFrame.javaScriptContext"];
+    content[@"bdgt"] = ^() {
+        NSLog(@"js调用oc---------begin--------");
+        NSArray *thisArr = [JSContext currentArguments];
+        for (JSValue *jsValue in thisArr) {
+            NSLog(@"=======%@",jsValue);
+        }
+        //JSValue *this = [JSContext currentThis];
+        //NSLog(@"this: %@",this);
+        NSLog(@"js调用oc---------The End-------");
+       
+    };
+
     
 }
 
