@@ -34,8 +34,8 @@
                     <rect key="frame" x="0.0" y="61" width="375" height="606"/>
                     <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     <connections>
-                        <outlet property="dataSource" destination="-1" id="maJ-WG-byf"/>
-                        <outlet property="delegate" destination="-1" id="1ht-pi-7Tj"/>
+                        <outlet property="dataSource" destination="-1" id="Pyx-m9-6PY"/>
+                        <outlet property="delegate" destination="-1" id="5Qv-bV-6dD"/>
                     </connections>
                 </tableView>
             </subviews>

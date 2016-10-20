@@ -8,6 +8,7 @@
 
 #import "SettingController.h"
 #import "AppDelegate.h"
+#import "UserInfoController.h"
 @interface SettingController ()
 
 
@@ -16,6 +17,8 @@
 
 /**action***/
 - (IBAction)backAction:(id)sender;
+
+
 
 @end
 
@@ -122,14 +125,28 @@
 
 /***选中后的操作***/
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    NSLog(@"%@",indexPath);
     long row = indexPath.row;
     long section =indexPath.section;
     if (section == 1 && row == 1) {
         //退出
+        UIAlertView * alert = [[UIAlertView alloc]initWithTitle:@"nil" message:@"确定要退出?" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
+        
+        [alert show];
+    }else if(section==0 && row == 0){
+        //个人信息
+        //xib 跳转
+        UserInfoController *userInfoController=[[UserInfoController alloc]initWithNibName:@"UserInfoController" bundle:nil];
+        [self presentViewController:userInfoController animated:YES completion:^{
+            
+        }];
         
     }
     
+}
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    if(buttonIndex == 1){
+        //执行退出的代码
+    }
 }
 
 
