@@ -12,6 +12,7 @@
 #import "UserDelegate.h"
 #import "FactoryHelper.h"
 #import "DBHelper.h"
+#import "HttpHelper.h"
 
 @interface cloudlib_iosTests : XCTestCase
 
@@ -21,9 +22,10 @@
 
 - (void)setUp {
     [super setUp];
+    [HttpHelper sendHttpRequest:@"http://192.168.1.7:8080/appServer/lendBook/testIos.jhtml" timeInterval:1 httpMethod:@"POST" encoding:NSUTF8StringEncoding];
     
     //NSLog(@"aaaaaaaaaaaaa");
-    UserDelegate *userDelegate=[FactoryHelper initFactoryHelperAndgetDBInstance:@"UserDelegate"];
+    //UserDelegate *userDelegate=[FactoryHelper initFactoryHelperAndgetDBInstance:@"UserDelegate"];
     
     //新增对象
     //User *user=[userDelegate saveModel:@"User"];
@@ -45,7 +47,7 @@
         //NSLog(@"%@",u.userName);
     //}
     
-   [userDelegate clearUsers:@"User"];
+   //[userDelegate clearUsers:@"User"];
     
     // Put setup code here. This method is called before the invocation of each test method in the class.
 }
