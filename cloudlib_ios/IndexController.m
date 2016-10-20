@@ -17,6 +17,8 @@
 /**action***/
 - (IBAction)settingAction:(id)sender;
 
+- (IBAction)scanAction:(id)sender;
+
 /***view**/
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 
@@ -28,14 +30,23 @@
     [super viewDidLoad];
     [self loadLocationHtmlFile:self.webView and:@"/index.html"];
     [self updateAppVersion];
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-   
+    
 }
 
+- (void)webViewDidFinishLoad:(UIWebView *)webView {
+    NSLog(@"oc调用js获取值");
+    NSMutableString *js = [NSMutableString string];
+    [js appendString:[NSString stringWithFormat:@"send('%@');", @"这是测试传值"]];
+    [self.webView stringByEvaluatingJavaScriptFromString:js];
 
+}
+
+/*****组件***/
 - (IBAction)settingAction:(id)sender {
     //xib 跳转
     self.settingController=[[SettingController alloc]initWithNibName:@"SettingController" bundle:nil];
@@ -43,4 +54,7 @@
         
     }];
 }
+
+- (IBAction)scanAction:(id)sender {
+   }
 @end

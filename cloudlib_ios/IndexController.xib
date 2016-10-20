@@ -29,6 +29,9 @@
                             </barButtonItem>
                             <barButtonItem key="rightBarButtonItem" image="search" id="Ulw-IJ-KMf">
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="scanAction:" destination="-1" id="U0p-mm-poc"/>
+                                </connections>
                             </barButtonItem>
                         </navigationItem>
                     </items>
@@ -47,6 +50,9 @@
                 <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JVP-V8-yJr">
                     <rect key="frame" x="0.0" y="44" width="375" height="574"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="Ab3-tI-U58"/>
+                    </connections>
                 </webView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
