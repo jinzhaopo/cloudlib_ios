@@ -17,6 +17,8 @@
 		18509C1E1DAE1A3C0021EB83 /* UserBean.m in Sources */ = {isa = PBXBuildFile; fileRef = 18509C1D1DAE1A3C0021EB83 /* UserBean.m */; };
 		185647541DAE20F90074EFBA /* LoginInfoBean.h in Sources */ = {isa = PBXBuildFile; fileRef = 185647531DAE20F90074EFBA /* LoginInfoBean.h */; };
 		185647561DAE21380074EFBA /* LoginInfoBean.m in Sources */ = {isa = PBXBuildFile; fileRef = 185647551DAE21380074EFBA /* LoginInfoBean.m */; };
+		185652831DB9F26500FC777F /* searchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185652811DB9F26500FC777F /* searchController.m */; };
+		185652841DB9F26500FC777F /* searchController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 185652821DB9F26500FC777F /* searchController.xib */; };
 		1856BAFB1D9CEA99004D8851 /* AdminController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1856BAF91D9CEA99004D8851 /* AdminController.m */; };
 		1856BAFC1D9CEA99004D8851 /* AdminController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1856BAFA1D9CEA99004D8851 /* AdminController.xib */; };
 		18617E6D1DB7477200F44D9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18FFA51D1D9B93FF00258011 /* Main.storyboard */; };
@@ -74,6 +76,9 @@
 		18509C1F1DAE1A4F0021EB83 /* UserBean.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserBean.h; sourceTree = "<group>"; };
 		185647531DAE20F90074EFBA /* LoginInfoBean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginInfoBean.h; sourceTree = "<group>"; };
 		185647551DAE21380074EFBA /* LoginInfoBean.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginInfoBean.m; sourceTree = "<group>"; };
+		185652801DB9F26500FC777F /* searchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = searchController.h; sourceTree = "<group>"; };
+		185652811DB9F26500FC777F /* searchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = searchController.m; sourceTree = "<group>"; };
+		185652821DB9F26500FC777F /* searchController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = searchController.xib; sourceTree = "<group>"; };
 		1856BAF81D9CEA99004D8851 /* AdminController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdminController.h; sourceTree = "<group>"; };
 		1856BAF91D9CEA99004D8851 /* AdminController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdminController.m; sourceTree = "<group>"; };
 		1856BAFA1D9CEA99004D8851 /* AdminController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdminController.xib; sourceTree = "<group>"; };
@@ -161,6 +166,16 @@
 				185647531DAE20F90074EFBA /* LoginInfoBean.h */,
 			);
 			name = bean;
+			sourceTree = "<group>";
+		};
+		1856527F1DB9F24E00FC777F /* search */ = {
+			isa = PBXGroup;
+			children = (
+				185652801DB9F26500FC777F /* searchController.h */,
+				185652811DB9F26500FC777F /* searchController.m */,
+				185652821DB9F26500FC777F /* searchController.xib */,
+			);
+			name = search;
 			sourceTree = "<group>";
 		};
 		1856BAF21D9CE7EA004D8851 /* index */ = {
@@ -349,6 +364,7 @@
 		18FFA5531D9B971600258011 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				1856527F1DB9F24E00FC777F /* search */,
 				18617E6C1DB73DB600F44D9B /* setting */,
 				1856BAF21D9CE7EA004D8851 /* index */,
 				18B38DD81D9BA1E300EF2885 /* login */,
@@ -453,6 +469,7 @@
 				182A56271DB069690058F80A /* UserController.xib in Resources */,
 				182A562C1DB077B20058F80A /* SwitchSchoolController.xib in Resources */,
 				18F802391DA9EEB100ABE3F5 /* IndexController.xib in Resources */,
+				185652841DB9F26500FC777F /* searchController.xib in Resources */,
 				188FA9A21DAF715F0076FC5B /* html in Resources */,
 				1856BAFC1D9CEA99004D8851 /* AdminController.xib in Resources */,
 				187ECE0E1DB85CF5004A29B9 /* sortednames.plist in Resources */,
@@ -481,6 +498,7 @@
 				185647541DAE20F90074EFBA /* LoginInfoBean.h in Sources */,
 				18FFA5501D9B96D000258011 /* UserDelegate.m in Sources */,
 				18617EB31DB7615100F44D9B /* SettingController.m in Sources */,
+				185652831DB9F26500FC777F /* searchController.m in Sources */,
 				1856BAFB1D9CEA99004D8851 /* AdminController.m in Sources */,
 				18509C191DAE10970021EB83 /* JsonUtil.m in Sources */,
 				18FFA54C1D9B968100258011 /* HttpHelper.m in Sources */,

@@ -16,12 +16,16 @@
 @property(nonatomic,strong) SettingController* settingController;
 
 /**action***/
+/**设置**/
 - (IBAction)settingAction:(id)sender;
 
+/**本来是查询的现在变成扫一扫**/
 - (IBAction)scanAction:(id)sender;
 
 /***view**/
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
+
+@property (weak, nonatomic) IBOutlet UITabBar *tabBarView;
 
 @end
 
@@ -32,21 +36,40 @@
     [self loadLocationHtmlFile:self.webView and:@"/index.html"];
     [self updateAppVersion];
     
-    JSContext *content = [self.webView valueForKeyPath:@"documentView.webView.mainFrame.javaScriptContext"];
-    content[@"bdgt"] = ^() {
-        NSLog(@"js调用oc---------begin--------");
-        NSArray *thisArr = [JSContext currentArguments];
-        for (JSValue *jsValue in thisArr) {
-            NSLog(@"=======%@",jsValue);
-        }
-        //JSValue *this = [JSContext currentThis];
-        //NSLog(@"this: %@",this);
-        NSLog(@"js调用oc---------The End-------");
-       
-    };
-
+    //1.默认第一个被选中
+    NSArray *items = self.tabBarView.items;
+    self.tabBarView.selectedItem = items[0];
+    
+//    JSContext *content = [self.webView valueForKeyPath:@"documentView.webView.mainFrame.javaScriptContext"];
+//    content[@"bdgt"] = ^() {
+//        NSLog(@"js调用oc---------begin--------");
+//        NSArray *thisArr = [JSContext currentArguments];
+//        for (JSValue *jsValue in thisArr) {
+//            NSLog(@"=======%@",jsValue);
+//        }
+//        NSLog(@"js调用oc---------The End-------");
+//       
+//    };
+//
     
 }
+
+#pragma mark -- UITabBarDelegate
+-(void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)Item{
+    long index = (unsigned long)[tabBar.items indexOfObject:Item];
+    if(index == 0){
+        //主页
+        
+    }else if(index == 1){
+        //查询
+        
+    }else if(index == 2){
+        //我的云图
+        
+    }
+   
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
